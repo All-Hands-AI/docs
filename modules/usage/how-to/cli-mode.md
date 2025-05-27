@@ -1,9 +1,12 @@
-# CLI Mode
+---
+title: "CLI Mode"
+description: "CLI mode provides a powerful interactive Command-Line Interface (CLI) that lets you engage with OpenHands directly from your terminal."
+---
 
 CLI mode provides a powerful interactive Command-Line Interface (CLI) that lets you engage with OpenHands directly
 from your terminal.
 
-This mode is different from the [headless mode](headless-mode), which is non-interactive and better for scripting.
+This mode is different from the [headless mode](/modules/usage/how-to/headless-mode), which is non-interactive and better for scripting.
 
 ## Getting Started
 
@@ -22,7 +25,7 @@ This command opens an interactive prompt where you can type tasks or commands an
 ### Running with Docker
 
 1. Set the following environment variables in your terminal:
-   - `SANDBOX_VOLUMES` to specify the directory you want OpenHands to access ([See using SANDBOX_VOLUMES for more info](../runtimes/docker#using-sandbox_volumes))
+   - `SANDBOX_VOLUMES` to specify the directory you want OpenHands to access ([See using SANDBOX_VOLUMES for more info](/modules/usage/runtimes/docker#using-sandbox_volumes))
    - `LLM_MODEL` - the LLM model to use (e.g. `export LLM_MODEL="anthropic/claude-sonnet-4-20250514"`)
    - `LLM_API_KEY` - your API key (e.g. `export LLM_API_KEY="sk_test_12345"`)
 
@@ -57,12 +60,12 @@ commands, and receive instant feedback—all inside your terminal.
 
 ### Starting a Conversation
 
-When you start the CLI, you'll see a welcome message and a prompt (`>`). Enter your first task or type a command to
+When you start the CLI, you'll see a welcome message and a prompt. Enter your first task or type a command to
 begin your conversation.
 
 ### Available Commands
 
-You can use the following commands whenever the prompt (`>`) is displayed:
+You can use the following commands whenever the prompt is displayed:
 
 | Command      | Description                                                    |
 |--------------|----------------------------------------------------------------|

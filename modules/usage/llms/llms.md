@@ -1,8 +1,11 @@
-# 🤖 LLM Backends
+---
+title: "🤖 LLM Backends"
+description: "This section is for users who want to connect OpenHands to different LLMs."
+---
 
-:::note
+<Note>
 This section is for users who want to connect OpenHands to different LLMs.
-:::
+</Note>
 
 OpenHands can connect to any LLM supported by LiteLLM. However, it requires a powerful model to work.
 
@@ -19,11 +22,10 @@ Based on these findings and community feedback, these are the latest models that
 - [deepseek/deepseek-chat](https://api-docs.deepseek.com/)
 - [all-hands/openhands-lm-32b-v0.1](https://www.all-hands.dev/blog/introducing-openhands-lm-32b----a-strong-open-coding-agent-model) -- available through [OpenRouter](https://openrouter.ai/all-hands/openhands-lm-32b-v0.1)
 
-
-:::warning
+<Warning>
 OpenHands will issue many prompts to the LLM you configure. Most of these LLMs cost money, so be sure to set spending
 limits and monitor usage.
-:::
+</Warning>
 
 If you have successfully run OpenHands with specific providers, we encourage you to open a PR to share your setup process 
 to help others using the same provider!
@@ -31,11 +33,11 @@ to help others using the same provider!
 For a full list of the providers and models available, please consult the
 [litellm documentation](https://docs.litellm.ai/docs/providers).
 
-:::note
+<Note>
 Most current local and open source models are not as powerful. When using such models, you may see long
 wait times between messages, poor responses, or errors about malformed JSON. OpenHands can only be as powerful as the
 models driving it. However, if you do find ones that work, please add them to the verified list above.
-:::
+</Note>
 
 ## LLM Configuration
 
@@ -59,13 +61,13 @@ using `-e`:
 
 We have a few guides for running OpenHands with specific model providers:
 
-- [Azure](llms/azure-llms)
-- [Google](llms/google-llms)
-- [Groq](llms/groq)
-- [Local LLMs with SGLang or vLLM](llms/../local-llms.md)
-- [LiteLLM Proxy](llms/litellm-proxy)
-- [OpenAI](llms/openai-llms)
-- [OpenRouter](llms/openrouter)
+- [Azure](/modules/usage/llms/azure-llms)
+- [Google](/modules/usage/llms/google-llms)
+- [Groq](/modules/usage/llms/groq)
+- [Local LLMs with SGLang or vLLM](/modules/usage/llms/local-llms)
+- [LiteLLM Proxy](/modules/usage/llms/litellm-proxy)
+- [OpenAI](/modules/usage/llms/openai-llms)
+- [OpenRouter](/modules/usage/llms/openrouter)
 
 ### API retries and rate limits
 
