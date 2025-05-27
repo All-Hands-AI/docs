@@ -1,6 +1,11 @@
-# OpenHands Feature Overview
+---
+title: "OpenHands Feature Overview"
+description: "Explore the key features and components of the OpenHands interface"
+---
 
-![overview](/img/oh-features.png)
+![overview](/static/img/oh-features.png)
+
+## Interface Components
 
 ### Chat Panel
 - Displays the conversation between the user and OpenHands.

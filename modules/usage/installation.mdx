@@ -1,4 +1,7 @@
-# Running OpenHands
+---
+title: "Running OpenHands"
+description: "Learn how to install and run OpenHands on your system"
+---
 
 ## System Requirements
 
@@ -10,31 +13,24 @@ A system with a modern processor and a minimum of **4GB RAM** is recommended to 
 
 ## Prerequisites
 
-<details>
-  <summary>MacOS</summary>
-
+<Accordion title="MacOS">
   **Docker Desktop**
 
   1. [Install Docker Desktop on Mac](https://docs.docker.com/desktop/setup/install/mac-install).
   2. Open Docker Desktop, go to `Settings > Advanced` and ensure `Allow the default Docker socket to be used` is enabled.
-</details>
+</Accordion>
 
-<details>
-  <summary>Linux</summary>
-
-  :::note
+<Accordion title="Linux">
+  <Note>
   Tested with Ubuntu 22.04.
-  :::
+  </Note>
 
   **Docker Desktop**
 
   1. [Install Docker Desktop on Linux](https://docs.docker.com/desktop/setup/install/linux/).
+</Accordion>
 
-</details>
-
-<details>
-  <summary>Windows</summary>
-
+<Accordion title="Windows">
   **WSL**
 
   1. [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
@@ -47,11 +43,10 @@ A system with a modern processor and a minimum of **4GB RAM** is recommended to 
   - General: `Use the WSL 2 based engine` is enabled.
   - Resources > WSL Integration: `Enable integration with my default WSL distro` is enabled.
 
-  :::note
+  <Note>
   The docker command below to start the app must be run inside the WSL terminal.
-  :::
-
-</details>
+  </Note>
+</Accordion>
 
 ## Start the App
 
@@ -73,10 +68,10 @@ docker run -it --rm --pull=always \
 
 You'll find OpenHands running at http://localhost:3000!
 
-You can also [connect OpenHands to your local filesystem](https://docs.all-hands.dev/modules/usage/runtimes/docker#connecting-to-your-filesystem),
-run OpenHands in a scriptable [headless mode](https://docs.all-hands.dev/modules/usage/how-to/headless-mode),
-interact with it via a [friendly CLI](https://docs.all-hands.dev/modules/usage/how-to/cli-mode),
-or run it on tagged issues with [a GitHub action](https://docs.all-hands.dev/modules/usage/how-to/github-action).
+You can also [connect OpenHands to your local filesystem](/modules/usage/runtimes/docker#connecting-to-your-filesystem),
+run OpenHands in a scriptable [headless mode](/modules/usage/how-to/headless-mode),
+interact with it via a [friendly CLI](/modules/usage/how-to/cli-mode),
+or run it on tagged issues with [a GitHub action](/modules/usage/how-to/github-action).
 
 ## Setup
 
@@ -106,11 +101,11 @@ Consider setting usage limits to control costs.
 2. [Generate an API key](https://platform.openai.com/api-keys).
 3. [Set up billing](https://platform.openai.com/account/billing/overview).
 
-Now you're ready to [get started with OpenHands](./getting-started).
+Now you're ready to [get started with OpenHands](/modules/usage/getting-started).
 
 ## Versions
 
-The [docker command above](./installation#start-the-app) pulls the most recent stable release of OpenHands. You have other options as well:
+The [docker command above](#start-the-app) pulls the most recent stable release of OpenHands. You have other options as well:
 - For a specific release, replace $VERSION in `openhands:$VERSION` and `runtime:$VERSION`, with the version number.
 We use SemVer so `0.9` will automatically point to the latest `0.9.x` release, and `0` will point to the latest `0.x.x` release.
 - For the most up-to-date development version, replace $VERSION in `openhands:$VERSION` and `runtime:$VERSION`, with `main`.
@@ -118,4 +113,4 @@ This version is unstable and is recommended for testing or development purposes 
 
 For the development workflow, see [Development.md](https://github.com/All-Hands-AI/OpenHands/blob/main/Development.md).
 
-Are you having trouble? Check out our [Troubleshooting Guide](https://docs.all-hands.dev/modules/usage/troubleshooting).
+Are you having trouble? Check out our [Troubleshooting Guide](/modules/usage/troubleshooting/troubleshooting).

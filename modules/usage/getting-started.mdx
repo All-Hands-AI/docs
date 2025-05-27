@@ -1,10 +1,13 @@
-# Getting Started with OpenHands
+---
+title: "Getting Started with OpenHands"
+description: "Learn how to use OpenHands for various engineering tasks"
+---
 
-So you've [run OpenHands](./installation) and have
-[set up your LLM](./installation#setup). Now what?
+So you've [run OpenHands](/modules/usage/installation) and have
+[set up your LLM](/modules/usage/installation#setup). Now what?
 
-OpenHands can assist with a range of engineering tasks. However, the technology is still new, and we’re far from having
-agents that can handle complex tasks independently. It’s important to understand what the agent does well and where it
+OpenHands can assist with a range of engineering tasks. However, the technology is still new, and we're far from having
+agents that can handle complex tasks independently. It's important to understand what the agent does well and where it
 needs support.
 
 ## Hello World
@@ -12,38 +15,62 @@ needs support.
 Start with a simple "hello world" example. It might be trickier than it seems!
 
 Prompt the agent with:
-> Write a bash script hello.sh that prints "hello world!"
+<CodeGroup>
+```
+Write a bash script hello.sh that prints "hello world!"
+```
+</CodeGroup>
 
 The agent will write the script, set the correct permissions, and run it to check the output.
 
 You can continue prompting the agent to refine your code. This is a great way to
 work with agents. Start simple, and iterate.
 
-> Modify hello.sh so that it accepts a name as the first argument, but defaults to "world"
+<CodeGroup>
+```
+Modify hello.sh so that it accepts a name as the first argument, but defaults to "world"
+```
+</CodeGroup>
 
 You can also use any language you need. The agent may need time to set up the environment.
 
-> Please convert hello.sh to a Ruby script, and run it
+<CodeGroup>
+```
+Please convert hello.sh to a Ruby script, and run it
+```
+</CodeGroup>
 
 ## Building From Scratch
 
-Agents excel at "greenfield" tasks, where they don’t need context about existing code and
+Agents excel at "greenfield" tasks, where they don't need context about existing code and
 they can start from scratch.
 Begin with a simple task and iterate from there. Be specific about what you want and the tech stack.
 
 For example, we might build a TODO app:
 
-> Build a frontend-only TODO app in React. All state should be stored in localStorage.
+<CodeGroup>
+```
+Build a frontend-only TODO app in React. All state should be stored in localStorage.
+```
+</CodeGroup>
 
 Once the basic structure is in place, continue refining:
 
-> Allow adding an optional due date to each task.
+<CodeGroup>
+```
+Allow adding an optional due date to each task.
+```
+</CodeGroup>
 
 Just like normal development, commit and push your code often.
 This way you can always revert back to an old state if the agent goes off track.
 You can ask the agent to commit and push for you:
 
-> Commit the changes and push them to a new branch called "feature/due-dates"
+<CodeGroup>
+```
+Commit the changes and push them to a new branch called "feature/due-dates"
+```
+</CodeGroup>
 
 ## Adding New Code
 
@@ -52,40 +79,76 @@ OpenHands is great at adding new code to an existing codebase.
 For instance, you can ask OpenHands to add a GitHub action that lints your code. It might check your codebase to
 determine the language, then create a new file in `./github/workflows/lint.yml`.
 
-> Add a GitHub action that lints the code in this repository.
+<CodeGroup>
+```
+Add a GitHub action that lints the code in this repository.
+```
+</CodeGroup>
 
 Some tasks need more context. While OpenHands can use commands like ls and grep to search, providing context upfront
 speeds things up and reduces token usage.
 
-> Modify ./backend/api/routes.js to add a new route that returns a list of all tasks.
+<CodeGroup>
+```
+Modify ./backend/api/routes.js to add a new route that returns a list of all tasks.
+```
+</CodeGroup>
 
-> Add a new React component to the ./frontend/components directory to display a list of Widgets.
-> It should use the existing Widget component.
+<CodeGroup>
+```
+Add a new React component to the ./frontend/components directory to display a list of Widgets.
+It should use the existing Widget component.
+```
+</CodeGroup>
 
 ## Refactoring
 
 OpenHands does great at refactoring code in small chunks. Rather than rearchitecting the entire codebase,
 it's more effective to break up long files and functions or rename variables.
 
-> Rename all the single-letter variables in ./app.go.
+<CodeGroup>
+```
+Rename all the single-letter variables in ./app.go.
+```
+</CodeGroup>
 
-> Split the `build_and_deploy_widgets` function into two functions, `build_widgets` and `deploy_widgets` in widget.php.
+<CodeGroup>
+```
+Split the `build_and_deploy_widgets` function into two functions, `build_widgets` and `deploy_widgets` in widget.php.
+```
+</CodeGroup>
 
-> Break ./api/routes.js into separate files for each route.
+<CodeGroup>
+```
+Break ./api/routes.js into separate files for each route.
+```
+</CodeGroup>
 
 ## Bug Fixes
 
 OpenHands can help track down and fix bugs, but bug fixing can be tricky and often requires more context.
-It’s helpful if you’ve already diagnosed the issue and just need OpenHands to handle the logic.
+It's helpful if you've already diagnosed the issue and just need OpenHands to handle the logic.
 
-> The email field in the `/subscribe` endpoint is rejecting .io domains. Fix this.
+<CodeGroup>
+```
+The email field in the `/subscribe` endpoint is rejecting .io domains. Fix this.
+```
+</CodeGroup>
 
-> The `search_widgets` function in ./app.py is doing a case-sensitive search. Make it case-insensitive.
+<CodeGroup>
+```
+The `search_widgets` function in ./app.py is doing a case-sensitive search. Make it case-insensitive.
+```
+</CodeGroup>
 
 For bug fixing, test-driven development can be really useful. You can ask the agent to write a new test and iterate
 until the bug is fixed:
 
-> The `hello` function crashes on the empty string. Write a test that reproduces this bug, then fix the code so it passes.
+<CodeGroup>
+```
+The `hello` function crashes on the empty string. Write a test that reproduces this bug, then fix the code so it passes.
+```
+</CodeGroup>
 
 ## More
 
@@ -96,4 +159,4 @@ Keep these tips in mind:
 * Provide plenty of context.
 * Commit and push frequently.
 
-See [Prompting Best Practices](./prompting/prompting-best-practices) for more tips on how to get the most out of OpenHands.
+See [Prompting Best Practices](/modules/usage/prompting/prompting-best-practices) for more tips on how to get the most out of OpenHands.
