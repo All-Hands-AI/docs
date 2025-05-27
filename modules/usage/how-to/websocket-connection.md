@@ -41,35 +41,27 @@ const socket = io("http://localhost:3000", {
 });
 
 socket.on("connect", () =<CodeGroup>
-```
 {
   console.log("Connected to OpenHands WebSocket");
 });
-```
 </CodeGroup>
 
 socket.on("oh_event", (event) =<CodeGroup>
-```
 {
   console.log("Received event:", event);
 });
-```
 </CodeGroup>
 
 socket.on("connect_error", (error) =<CodeGroup>
-```
 {
   console.error("Connection error:", error);
 });
-```
 </CodeGroup>
 
 socket.on("disconnect", (reason) =<CodeGroup>
-```
 {
   console.log("Disconnected:", reason);
 });
-```
 ```
 </CodeGroup>
 
@@ -100,7 +92,6 @@ Example event handler:
 
 ```javascript
 socket.on("oh_event", (event) =<CodeGroup>
-```
 {
   if (event.source === "agent" && event.type === "message") {
     console.log("Agent says:", event.message);
@@ -109,7 +100,6 @@ socket.on("oh_event", (event) =<CodeGroup>
     console.log("Result:", event.result);
   }
 });
-```
 ```
 </CodeGroup>
 
@@ -125,11 +115,9 @@ brew install websocat
 
 # On Linux
 curl -L https://github.com/vi/websocat/releases/download/v1.11.0/websocat.x86_64-unknown-linux-musl <CodeGroup>
-```
 websocat
 chmod +x websocat
 sudo mv websocat /usr/local/bin/
-```
 ```
 </CodeGroup>
 

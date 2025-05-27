@@ -1,10 +1,7 @@
 ---
-title: "Configuration Options"
-description: "<Note>
-```
-This page outlines all available configuration options for OpenHands, allowing you to customize its behavior and integrate it with other se..."
+title: "Note"
+description: "OpenHands documentation"
 ---
-```
 </CodeGroup>
 
 
@@ -14,7 +11,6 @@ note
 This page outlines all available configuration options for OpenHands, allowing you to customize its behavior and
 integrate it with other services. In GUI Mode, any settings applied through the Settings UI will take precedence.
 :::
-```
 </CodeGroup>
 
 ## Core Configuration
@@ -158,16 +154,12 @@ The core configuration options are defined in the `[core]` section of the `confi
 
 The LLM (Large Language Model) configuration options are defined in the `[llm]` section of the `config.toml` file.
 
-To use these with the docker command, pass in `-e LLM_<option<CodeGroup>
-```
+To use these with the docker command, pass in `-e LLM_<option>
 `. Example: `-e LLM_NUM_RETRIES`.
-```
 </CodeGroup>
 
 <Note>
-```
 For development setups, you can also define custom named LLM configurations. See [Custom LLM Configurations](/modules/usage/custom-llm-configs) for details.
-```
 </CodeGroup>
 
 </Note>
@@ -177,7 +169,6 @@ For development setups, you can also define custom named LLM configurations. See
   - Type: `str`
   - Default: `""`
   - Description: AWS access key ID
-```
 </CodeGroup>
 
 - `aws_region_name`
@@ -304,10 +295,8 @@ For development setups, you can also define custom named LLM configurations. See
 
 ## Agent Configuration
 
-The agent configuration options are defined in the `[agent]` and `[agent.<agent_name<CodeGroup>
-```
+The agent configuration options are defined in the `[agent]` and `[agent.<agent_name>
 ]` sections of the `config.toml` file.
-```
 </CodeGroup>
 
 ### LLM Configuration
@@ -359,10 +348,8 @@ The sandbox configuration options are defined in the `[sandbox]` section of the 
 
 
 
-To use these with the docker command, pass in `-e SANDBOX_<option<CodeGroup>
-```
+To use these with the docker command, pass in `-e SANDBOX_<option>
 `. Example: `-e SANDBOX_TIMEOUT`.
-```
 </CodeGroup>
 
 ### Execution
@@ -425,10 +412,8 @@ To use these with the docker command, pass in `-e SANDBOX_<option<CodeGroup>
 
 The security configuration options are defined in the `[security]` section of the `config.toml` file.
 
-To use these with the docker command, pass in `-e SECURITY_<option<CodeGroup>
-```
+To use these with the docker command, pass in `-e SECURITY_<option>
 `. Example: `-e SECURITY_CONFIRMATION_MODE`.
-```
 </CodeGroup>
 
 ### Confirmation Mode
@@ -446,8 +431,6 @@ To use these with the docker command, pass in `-e SECURITY_<option<CodeGroup>
 ---
 
 <CodeGroup>
-```
 **Note**: Adjust configurations carefully, especially for memory, security, and network-related settings to ensure optimal performance and security.
 Please note that the configuration options may be subject to change in future versions of OpenHands. It's recommended to refer to the official documentation for the most up-to-date information.
-```
 </CodeGroup>

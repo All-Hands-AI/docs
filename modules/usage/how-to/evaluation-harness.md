@@ -37,13 +37,11 @@ OpenHands can be run from the command line using the following format:
 
 ```bash
 poetry run python ./openhands/core/main.py \
-        -i <max_iterations<CodeGroup>
-```
+        -i <max_iterations>
 \
         -t "<task_description>" \
         -c <agent_class> \
         -l <llm_config>
-```
 ```
 </CodeGroup>
 
@@ -117,7 +115,6 @@ To create an evaluation workflow for your benchmark, follow these steps:
 2. Create a configuration:
    ```python
    def get_config(instance: pd.Series, metadata: EvalMetadata) -<CodeGroup>
-```
 AppConfig:
        config = AppConfig(
            default_agent=metadata.agent_class,
@@ -132,7 +129,6 @@ AppConfig:
        config.set_llm_config(metadata.llm_config)
        return config
    ```
-```
 </CodeGroup>
 
 3. Initialize the runtime and set up the evaluation environment:
@@ -147,13 +143,11 @@ AppConfig:
    ```python
    from openhands.utils.async_utils import call_async_from_sync
    def process_instance(instance: pd.Series, metadata: EvalMetadata) -<CodeGroup>
-```
 EvalOutput:
        config = get_config(instance, metadata)
        runtime = create_runtime(config)
        call_async_from_sync(runtime.connect)
        initialize_runtime(runtime, instance)
-```
 </CodeGroup>
 
        instruction = get_instruction(instance, metadata)
@@ -262,14 +256,12 @@ Here's an example of a `user_response_fn` used in the SWE-Bench evaluation:
 
 ```python
 def codeact_user_response(state: State | None) -<CodeGroup>
-```
 str:
     msg = (
         'Please continue working on the task on whatever approach you think is suitable.\n'
         'If you think you have solved the task, please first send your answer to user through message and then <execute_bash> exit </execute_bash>.\n'
         'IMPORTANT: YOU SHOULD NEVER ASK FOR HUMAN HELP.\n'
     )
-```
 </CodeGroup>
 
     if state and state.history:
@@ -280,7 +272,6 @@ str:
             if isinstance(event, MessageAction) and event.source == 'user'
         ]
         if len(user_msgs) <CodeGroup>
-```
 = 2:
             # let the agent know that it can give up when it has tried 3 times
             return (
@@ -288,7 +279,6 @@ str:
                 + 'If you want to give up, run: <execute_bash> exit </execute_bash>.\n'
             )
     return msg
-```
 ```
 </CodeGroup>
 

@@ -12,27 +12,21 @@ You can use [Daytona](https://www.daytona.io/) as a runtime provider:
 4. Once the key is generated, copy it.
 
 ## Step 2: Set Your API Key as an Environment Variable
-Run the following command in your terminal, replacing `<your-api-key<CodeGroup>
-```
+Run the following command in your terminal, replacing `<your-api-key>
 ` with the actual key you copied:
-```
 </CodeGroup>
 
 ### Mac/Linux:
 ```bash
-export DAYTONA_API_KEY="<your-api-key<CodeGroup>
-```
+export DAYTONA_API_KEY="<your-api-key>
 "
-```
 ```
 </CodeGroup>
 
 ### Windows PowerShell:
 ```powershell
-$env:DAYTONA_API_KEY="<your-api-key<CodeGroup>
-```
+$env:DAYTONA_API_KEY="<your-api-key>
 "
-```
 ```
 </CodeGroup>
 

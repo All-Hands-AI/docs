@@ -1,10 +1,7 @@
 ---
-title: "Model Context Protocol (MCP)"
-description: "<Note>
-```
-This page outlines how to configure and use the Model Context Protocol (MCP) in OpenHands, allowing you to extend the agent's capabilities ..."
+title: "Note"
+description: "OpenHands documentation"
 ---
-```
 </CodeGroup>
 
 
@@ -14,7 +11,6 @@ note
 This page outlines how to configure and use the Model Context Protocol (MCP) in OpenHands, allowing you to extend the
 agent's capabilities with custom tools.
 :::
-```
 </CodeGroup>
 
 ## Overview

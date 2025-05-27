@@ -13,37 +13,25 @@ A system with a modern processor and a minimum of **4GB RAM** is recommended to 
 
 ## Prerequisites
 
-<Accordion title="MacOS"<CodeGroup>
-```
-**Docker Desktop**
-```
-</CodeGroup>
+<Accordion title="MacOS">
+  **Docker Desktop**
 
   1. [Install Docker Desktop on Mac](https://docs.docker.com/desktop/setup/install/mac-install).
-  2. Open Docker Desktop, go to `Settings <CodeGroup>
-```
-Advanced` and ensure `Allow the default Docker socket to be used` is enabled.
+  2. Open Docker Desktop, go to `Settings > Advanced` and ensure `Allow the default Docker socket to be used` is enabled.
 </Accordion>
-```
-</CodeGroup>
 
-<Accordion title="Linux"<CodeGroup>
-```
-<Note>
-  Tested with Ubuntu 22.04.
+<Accordion title="Linux">
+  <Note>
+    Tested with Ubuntu 22.04.
   </Note>
-```
-</CodeGroup>
 
   **Docker Desktop**
 
   1. [Install Docker Desktop on Linux](https://docs.docker.com/desktop/setup/install/linux/).
-</Accordion<CodeGroup>
-```
+</Accordion>
+
 <Accordion title="Windows">
   **WSL**
-```
-</CodeGroup>
 
   1. [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
   2. Run `wsl --version` in powershell and confirm `Default Version: 2`.
@@ -53,19 +41,12 @@ Advanced` and ensure `Allow the default Docker socket to be used` is enabled.
   1. [Install Docker Desktop on Windows](https://docs.docker.com/desktop/setup/install/windows-install).
   2. Open Docker Desktop, go to `Settings` and confirm the following:
   - General: `Use the WSL 2 based engine` is enabled.
-  - Resources <CodeGroup>
-```
-WSL Integration: `Enable integration with my default WSL distro` is enabled.
-```
-</CodeGroup>
+  - Resources > WSL Integration: `Enable integration with my default WSL distro` is enabled.
 
   <Note>
-```
-The docker command below to start the app must be run inside the WSL terminal.
+    The docker command below to start the app must be run inside the WSL terminal.
   </Note>
 </Accordion>
-```
-</CodeGroup>
 
 ## Start the App
 
@@ -130,6 +111,6 @@ We use SemVer so `0.9` will automatically point to the latest `0.9.x` release, a
 - For the most up-to-date development version, replace $VERSION in `openhands:$VERSION` and `runtime:$VERSION`, with `main`.
 This version is unstable and is recommended for testing or development purposes only.
 
-For the development workflow, see [Development.md](/modules/usage/https://github.com/All-Hands-AI/OpenHands/blob/main/Development).
+For the development workflow, see [Development.md](https://github.com/All-Hands-AI/OpenHands/blob/main/Development).
 
 Are you having trouble? Check out our [Troubleshooting Guide](/modules/usage/troubleshooting/troubleshooting).

@@ -12,10 +12,8 @@ When running OpenHands, you'll need to set the following environment variable us
 [docker run command](../installation#running-openhands):
 
 ```
-LLM_API_VERSION="<api-version<CodeGroup>
-```
+LLM_API_VERSION="<api-version>
 "              # e.g. "2023-05-15"
-```
 ```
 </CodeGroup>
 
@@ -29,10 +27,8 @@ docker run -it --pull=always \
 Then in the OpenHands UI Settings under the `LLM` tab:
 
 <Note>
-```
 You will need your ChatGPT deployment name which can be found on the deployments page in Azure. This is referenced as
 &lt;deployment-name&gt; below.
-```
 </CodeGroup>
 
 </Note>
@@ -42,7 +38,6 @@ You will need your ChatGPT deployment name which can be found on the deployments
    - `Custom Model` to azure/&lt;deployment-name&gt;
    - `Base URL` to your Azure API Base URL (e.g. `https://example-endpoint.openai.azure.com`)
    - `API Key` to your Azure API key
-```
 </CodeGroup>
 
 ### Azure OpenAI Configuration
@@ -51,9 +46,7 @@ When running OpenHands, set the following environment variable using `-e` in the
 [docker run command](../installation#running-openhands):
 
 ```
-LLM_API_VERSION="<api-version<CodeGroup>
-```
+LLM_API_VERSION="<api-version>
 "                                    # e.g. "2024-02-15-preview"
-```
 ```
 </CodeGroup>

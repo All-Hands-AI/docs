@@ -135,13 +135,10 @@ Use this configuration when you want to let an LLM draft edits before making the
 - Make precise, focused changes to code or text
 
 <Note>
-```
 Custom LLM configurations are only available when using OpenHands in development mode, via `main.py` or `cli.py`. When running via `docker run`, please use the standard configuration options.
-```
 </CodeGroup>
 
 </Note>
 ```
 
-```
 </CodeGroup>

@@ -14,23 +14,18 @@ Currently OpenHands supports the following types of microagents:
 - [Keyword-Triggered Microagents](/modules/usage/microagents-keyword): Guidelines activated by specific keywords in prompts.
 
 To customize OpenHands' behavior, create a .openhands/microagents/ directory in the root of your repository and
-add `<microagent_name<CodeGroup>
-```
+add `<microagent_name>
 .md` files inside.
-```
 </CodeGroup>
 
 <Note>
-```
 Loaded microagents take up space in the context window.
 These microagents, alongside user messages, inform OpenHands about the task and the environment.
-```
 </CodeGroup>
 
 </Note>
 ```
 Example repository structure:
-```
 </CodeGroup>
 
 ```

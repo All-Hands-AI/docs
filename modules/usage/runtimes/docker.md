@@ -59,9 +59,7 @@ export SANDBOX_VOLUMES=$HOME/projects:/workspace:rw,/path/to/large/dataset:/data
 ### Using WORKSPACE_* variables (Deprecated)
 
 <CodeGroup>
-```
 **Note:** This method is deprecated and will be removed in a future version. Please use `SANDBOX_VOLUMES` instead.
-```
 </CodeGroup>
 
 1. Set `WORKSPACE_BASE`:

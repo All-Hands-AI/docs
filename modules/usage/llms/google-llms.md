@@ -23,12 +23,10 @@ To use Vertex AI through Google Cloud Platform when running OpenHands, you'll ne
 variables using `-e` in the [docker run command](../installation#running-openhands):
 
 ```
-GOOGLE_APPLICATION_CREDENTIALS="<json-dump-of-gcp-service-account-json<CodeGroup>
-```
+GOOGLE_APPLICATION_CREDENTIALS="<json-dump-of-gcp-service-account-json>
 "
 VERTEXAI_PROJECT="<your-gcp-project-id>"
 VERTEXAI_LOCATION="<your-gcp-location>"
-```
 ```
 </CodeGroup>
 

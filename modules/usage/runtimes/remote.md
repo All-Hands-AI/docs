@@ -1,10 +1,7 @@
 ---
-title: "OpenHands Remote Runtime"
-description: "<Note>
-```
-This runtime is specifically designed for agent evaluation purposes only through the [OpenHands evaluation harness](https://github.com/All-..."
+title: "Note"
+description: "OpenHands documentation"
 ---
-```
 </CodeGroup>
 
 
@@ -14,7 +11,6 @@ note
 This runtime is specifically designed for agent evaluation purposes only through the
 [OpenHands evaluation harness](https://github.com/All-Hands-AI/OpenHands/tree/main/evaluation). It should not be used to launch production OpenHands applications.
 :::
-```
 </CodeGroup>
 
 OpenHands Remote Runtime is currently in beta (read [here](https://runtime.all-hands.dev/) for more details), it allows you to launch runtimes

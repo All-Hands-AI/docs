@@ -13,10 +13,8 @@ Providing feedback is easy! When you are using OpenHands, you can press the thum
 during your interaction. You will be prompted to provide your email address
 (e.g. so we can contact you if we want to ask any follow-up questions), and you can choose whether you want to provide feedback publicly or privately.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5rFx-StMVV0?si=svo7xzp6LhGK_GXr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen<CodeGroup>
-```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5rFx-StMVV0?si=svo7xzp6LhGK_GXr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
-```
 </CodeGroup>
 
 ## 📜 Data Use and Privacy

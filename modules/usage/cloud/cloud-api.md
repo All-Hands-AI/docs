@@ -37,7 +37,7 @@ To start a new conversation with OpenHands to perform a task, you'll need to mak
 
 #### Examples
 
-<Accordion title="cURL"<CodeGroup>
+<Accordion title="cURL">
 ```
 ```bash
 curl -X POST "https://app.all-hands.dev/api/conversations" \
@@ -49,14 +49,12 @@ curl -X POST "https://app.all-hands.dev/api/conversations" \
   }'
 ```
 </Accordion>
-```
 </CodeGroup>
 
-<Accordion title="Python (with requests)"<CodeGroup>
+<Accordion title="Python (with requests)">
 ```
 ```python
 import requests
-```
 </CodeGroup>
 
 api_key = "YOUR_API_KEY"
@@ -78,10 +76,9 @@ conversation = response.json()
 print(f"Conversation Link: https://app.all-hands.dev/conversations/{conversation['conversation_id']}")
 print(f"Status: {conversation['status']}")
 ```
-</Accordion<CodeGroup>
+</Accordion>
 ```
 <Accordion title="TypeScript/JavaScript (with fetch)">
-```
 </CodeGroup>
 
 ```typescript
@@ -120,10 +117,9 @@ async function startConversation() {
 startConversation();
 ```
 
-</Accordion<CodeGroup>
+</Accordion>
 ```
 #### Response
-```
 </CodeGroup>
 
 The API will return a JSON object with details about the created conversation:
@@ -154,14 +150,13 @@ GET https://app.all-hands.dev/api/conversations/{conversation_id}
 
 #### Example
 
-<Accordion title="cURL"<CodeGroup>
+<Accordion title="cURL">
 ```
 ```bash
 curl -X GET "https://app.all-hands.dev/api/conversations/{conversation_id}" \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 </Accordion>
-```
 </CodeGroup>
 
 #### Response

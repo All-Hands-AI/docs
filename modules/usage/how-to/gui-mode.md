@@ -29,7 +29,7 @@ OpenHands supports multiple version control providers. You can configure tokens 
 
 OpenHands automatically exports a `GITHUB_TOKEN` to the shell environment if provided:
 
-<Accordion title="Setting Up a GitHub Token"<CodeGroup>
+<Accordion title="Setting Up a GitHub Token">
 ```
 1. **Generate a Personal Access Token (PAT)**:
    - On GitHub, go to Settings > Developer Settings > Personal Access Tokens > Tokens (classic).
@@ -45,13 +45,11 @@ OpenHands automatically exports a `GITHUB_TOKEN` to the shell environment if pro
    - Paste your token in the `GitHub Token` field.
    - Click `Save Changes` to apply the changes.
 </Accordion>
-```
 </CodeGroup>
 
-<Accordion title="Organizational Token Policies"<CodeGroup>
+<Accordion title="Organizational Token Policies">
 ```
 If you're working with organizational repositories, additional setup may be required:
-```
 </CodeGroup>
 
   1. **Check Organization Requirements**:
@@ -63,10 +61,9 @@ If you're working with organizational repositories, additional setup may be requ
    - Look for the organization under `Organization access`.
    - If required, click `Enable SSO` next to your organization.
    - Complete the SSO authorization process.
-</Accordion<CodeGroup>
+</Accordion>
 ```
 <Accordion title="Troubleshooting">
-```
 </CodeGroup>
 
   Common issues and solutions:
@@ -86,15 +83,14 @@ If you're working with organizational repositories, additional setup may be requ
      - The app will show a green checkmark if the token is valid.
      - Try accessing a repository to confirm permissions.
      - Check the browser console for any error messages.
-</Accordion<CodeGroup>
+</Accordion>
 ```
 #### GitLab Token Setup
-```
 </CodeGroup>
 
 OpenHands automatically exports a `GITLAB_TOKEN` to the shell environment if provided:
 
-<Accordion title="Setting Up a GitLab Token"<CodeGroup>
+<Accordion title="Setting Up a GitLab Token">
 ```
 1. **Generate a Personal Access Token (PAT)**:
    - On GitLab, go to User Settings > Access Tokens.
@@ -110,13 +106,11 @@ OpenHands automatically exports a `GITLAB_TOKEN` to the shell environment if pro
    - Paste your token in the `GitLab Token` field.
    - Click `Save Changes` to apply the changes.
 </Accordion>
-```
 </CodeGroup>
 
-<Accordion title="Troubleshooting"<CodeGroup>
+<Accordion title="Troubleshooting">
 ```
 Common issues and solutions:
-```
 </CodeGroup>
 
   - **Token Not Recognized**:
@@ -128,10 +122,9 @@ Common issues and solutions:
      - Verify project access permissions.
      - Check if the token has the necessary scopes.
      - For group/organization repositories, ensure you have proper access.
-</Accordion<CodeGroup>
+</Accordion>
 ```
 ### Advanced Settings
-```
 </CodeGroup>
 
 1. Inside the Settings page, under the `LLM` tab, toggle `Advanced` options to access additional settings.

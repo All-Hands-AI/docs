@@ -1,24 +1,17 @@
 ---
-title: "Runtime Configuration"
-description: "<Note>
-```
-This section is for users that would like to use a runtime other than Docker for OpenHands. 
-</Note>"
+title: "Note"
+description: "OpenHands documentation"
 ---
-```
 </CodeGroup>
 
 <Note>
-```
 This section is for users that would like to use a runtime other than Docker for OpenHands.
-```
 </CodeGroup>
 
 </Note>
 ```
 A Runtime is an environment where the OpenHands agent can edit files and run
 commands.
-```
 </CodeGroup>
 
 By default, OpenHands uses a [Docker-based runtime](/modules/usage/docker), running on your local computer.

@@ -23,7 +23,6 @@ The OpenHands Runtime system uses a client-server architecture implemented with 
 ```mermaid
 graph TD
     A[User-provided Custom Docker Image] --<CodeGroup>
-```
 B[OpenHands Backend]
     B -->|Builds| C[OH Runtime Image]
     C -->|Launches| D[Action Executor]
@@ -31,25 +30,20 @@ B[OpenHands Backend]
     D -->|Initializes| F[Bash Shell]
     D -->|Initializes| G[Plugins]
     G -->|Initializes| L[Jupyter Server]
-```
 </CodeGroup>
 
     B --<CodeGroup>
-```
 |Spawn| H[Agent]
     B -->|Spawn| I[EventStream]
     I <--->|Execute Action to
     Get Observation
     via REST API
     | D
-```
 </CodeGroup>
 
     H --<CodeGroup>
-```
 |Generate Action| I
     I -->|Obtain Observation| H
-```
 </CodeGroup>
 
     subgraph "Docker Container"
