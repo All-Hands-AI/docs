@@ -1,4 +1,7 @@
-# OpenHands Cloud
+---
+title: "OpenHands Cloud"
+description: "Get started with the hosted cloud version of OpenHands"
+---
 
 OpenHands Cloud is the hosted cloud version of All Hands AI's OpenHands.
 
@@ -17,8 +20,8 @@ You'll be prompted to connect with your GitHub or GitLab account:
 
 Once you've connected your account, you can:
 
-- [Install GitHub Integration](./github-installation.md) to use OpenHands with your GitHub repositories
-- [Install GitLab Integration](./gitlab-installation.md) to use OpenHands with your GitLab repositories
-- [Access the Cloud UI](./cloud-ui.md) to interact with the web interface
-- [Use the Cloud API](./cloud-api.md) to programmatically interact with OpenHands
-- [Set up the Cloud Issue Resolver](./cloud-issue-resolver.md) to automate code fixes and provide intelligent assistance
+- [Install GitHub Integration](/modules/usage/cloud/github-installation) to use OpenHands with your GitHub repositories
+- [Install GitLab Integration](/modules/usage/cloud/gitlab-installation) to use OpenHands with your GitLab repositories
+- [Access the Cloud UI](/modules/usage/cloud/cloud-ui) to interact with the web interface
+- [Use the Cloud API](/modules/usage/cloud/cloud-api) to programmatically interact with OpenHands
+- [Set up the Cloud Issue Resolver](/modules/usage/cloud/cloud-issue-resolver) to automate code fixes and provide intelligent assistance
