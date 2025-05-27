@@ -1,4 +1,7 @@
-# Cloud API
+---
+title: "Cloud API"
+description: "OpenHands Cloud provides a REST API that allows you to programmatically interact with the service. This is useful if you want to kick off your own ..."
+---
 
 OpenHands Cloud provides a REST API that allows you to programmatically interact with the service. This is useful if
 you want to kick off your own jobs from your programs in a flexible way.
@@ -17,7 +20,7 @@ To use the OpenHands Cloud API, you'll need to generate an API key:
 5. Give your key a descriptive name (Example: "Development" or "Production") and select `Create`.
 6. Copy the generated API key and store it securely. It will only be shown once.
 
-![API Key Generation](/img/docs/api-key-generation.png)
+![API Key Generation](/static/img/docs/api-key-generation.png)
 
 ## API Usage
 
@@ -34,9 +37,8 @@ To start a new conversation with OpenHands to perform a task, you'll need to mak
 
 #### Examples
 
-<details>
-<summary>cURL</summary>
-
+<Accordion title="cURL"<CodeGroup>
+```
 ```bash
 curl -X POST "https://app.all-hands.dev/api/conversations" \
   -H "Authorization: Bearer YOUR_API_KEY" \
@@ -46,13 +48,16 @@ curl -X POST "https://app.all-hands.dev/api/conversations" \
     "repository": "yourusername/your-repo"
   }'
 ```
-</details>
+</Accordion>
+```
+</CodeGroup>
 
-<details>
-<summary>Python (with requests)</summary>
-
+<Accordion title="Python (with requests)"<CodeGroup>
+```
 ```python
 import requests
+```
+</CodeGroup>
 
 api_key = "YOUR_API_KEY"
 url = "https://app.all-hands.dev/api/conversations"
@@ -73,10 +78,11 @@ conversation = response.json()
 print(f"Conversation Link: https://app.all-hands.dev/conversations/{conversation['conversation_id']}")
 print(f"Status: {conversation['status']}")
 ```
-</details>
-
-<details>
-<summary>TypeScript/JavaScript (with fetch)</summary>
+</Accordion<CodeGroup>
+```
+<Accordion title="TypeScript/JavaScript (with fetch)">
+```
+</CodeGroup>
 
 ```typescript
 const apiKey = "YOUR_API_KEY";
@@ -114,9 +120,11 @@ async function startConversation() {
 startConversation();
 ```
 
-</details>
-
+</Accordion<CodeGroup>
+```
 #### Response
+```
+</CodeGroup>
 
 The API will return a JSON object with details about the created conversation:
 
@@ -146,14 +154,15 @@ GET https://app.all-hands.dev/api/conversations/{conversation_id}
 
 #### Example
 
-<details>
-<summary>cURL</summary>
-
+<Accordion title="cURL"<CodeGroup>
+```
 ```bash
 curl -X GET "https://app.all-hands.dev/api/conversations/{conversation_id}" \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
-</details>
+</Accordion>
+```
+</CodeGroup>
 
 #### Response
 

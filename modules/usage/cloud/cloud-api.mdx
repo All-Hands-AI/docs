@@ -17,9 +17,12 @@ To use the OpenHands Cloud API, you'll need to generate an API key:
 5. Give your key a descriptive name (Example: "Development" or "Production") and select `Create`.
 6. Copy the generated API key and store it securely. It will only be shown once.
 
-<Frame caption="API Key Generation">
-  <img src="https://docs.all-hands.dev/assets/images/api-key-generation-04f9168d4eaec84f1daed71da338d013.png" />
+<Frame caption="API Key Generation"<CodeGroup>
+```
+<img src="https://docs.all-hands.dev/assets/images/api-key-generation-04f9168d4eaec84f1daed71da338d013.png" />
 </Frame>
+```
+</CodeGroup>
 
 ## API Usage
 
@@ -36,7 +39,8 @@ To start a new conversation with OpenHands to perform a task, you'll need to mak
 
 #### Examples
 
-<Accordion title="cURL">
+<Accordion title="cURL"<CodeGroup>
+```
 ```
 curl -X POST "https://app.all-hands.dev/api/conversations" \
   -H "Authorization: Bearer YOUR_API_KEY" \
@@ -46,12 +50,16 @@ curl -X POST "https://app.all-hands.dev/api/conversations" \
     "repository": "yourusername/your-repo"
   }'
 ```
+```
+</CodeGroup>
 
-</Accordion>
-
+</Accordion<CodeGroup>
+```
 <Accordion title="Python (with requests)">
 ```
 import requests
+```
+</CodeGroup>
 
 api_key = "YOUR_API_KEY"
 url = "https://app.all-hands.dev/api/conversations"
@@ -73,12 +81,14 @@ print(f"Conversation Link: https://app.all-hands.dev/conversations/{conversation
 print(f"Status: {conversation['status']}")
 ```
 
-</Accordion>
-
+</Accordion<CodeGroup>
+```
 <Accordion title="TypeScript/JavaScript (with fetch)">
 ```
 const apiKey = "YOUR_API_KEY";
 const url = "https://app.all-hands.dev/api/conversations";
+```
+</CodeGroup>
 
 const headers = {
   "Authorization": `Bearer ${apiKey}`,
@@ -112,9 +122,11 @@ async function startConversation() {
 startConversation();
 ```
 
-</Accordion>
-
+</Accordion<CodeGroup>
+```
 #### Response
+```
+</CodeGroup>
 
 The API will return a JSON object with details about the created conversation:
 
@@ -143,15 +155,20 @@ GET https://app.all-hands.dev/api/conversations/{conversation_id}
 
 #### Example
 
-<Accordion title="cURL">
+<Accordion title="cURL"<CodeGroup>
+```
 ```
 curl -X GET "https://app.all-hands.dev/api/conversations/{conversation_id}" \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
+```
+</CodeGroup>
 
-</Accordion>
-
+</Accordion<CodeGroup>
+```
 #### Response
+```
+</CodeGroup>
 
 The response is formatted as follows:
 

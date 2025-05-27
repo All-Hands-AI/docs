@@ -1,4 +1,7 @@
-# GitHub Installation
+---
+title: "GitHub Installation"
+description: "This guide walks you through the process of installing and configuring OpenHands Cloud for your GitHub repositories."
+---
 
 This guide walks you through the process of installing and configuring OpenHands Cloud for your GitHub repositories.
 
@@ -44,10 +47,10 @@ You can modify repository access at any time by visiting the Settings page and s
 
 Once you've granted repository access, you can use OpenHands with your GitHub repositories.
 
-For details on how to use OpenHands with GitHub issues and pull requests, see the [Cloud Issue Resolver](./cloud-issue-resolver.md) documentation.
+For details on how to use OpenHands with GitHub issues and pull requests, see the [Cloud Issue Resolver](/modules/usage//modules/usage/cloud-issue-resolver) documentation.
 
 ## Next Steps
 
-- [Access the Cloud UI](./cloud-ui.md) to interact with the web interface
-- [Use the Cloud Issue Resolver](./cloud-issue-resolver.md) to automate code fixes and get assistance
-- [Use the Cloud API](./cloud-api.md) to programmatically interact with OpenHands
+- [Access the Cloud UI](/modules/usage//modules/usage/cloud-ui) to interact with the web interface
+- [Use the Cloud Issue Resolver](/modules/usage//modules/usage/cloud-issue-resolver) to automate code fixes and get assistance
+- [Use the Cloud API](/modules/usage//modules/usage/cloud-api) to programmatically interact with OpenHands

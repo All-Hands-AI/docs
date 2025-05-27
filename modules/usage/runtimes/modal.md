@@ -1,4 +1,7 @@
-# Modal Runtime
+---
+title: "Modal Runtime"
+description: "Our partners at [Modal](https://modal.com/) have provided a runtime for OpenHands."
+---
 
 Our partners at [Modal](https://modal.com/) have provided a runtime for OpenHands.
 

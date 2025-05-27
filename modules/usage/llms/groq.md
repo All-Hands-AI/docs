@@ -1,4 +1,7 @@
-# Groq
+---
+title: "Groq"
+description: "OpenHands uses LiteLLM to make calls to chat models on Groq. You can find their documentation on using Groq as a  provider [here](https://docs.lite..."
+---
 
 OpenHands uses LiteLLM to make calls to chat models on Groq. You can find their documentation on using Groq as a 
 provider [here](https://docs.litellm.ai/docs/providers/groq).

@@ -1,4 +1,7 @@
-# Custom LLM Configurations
+---
+title: "Custom LLM Configurations"
+description: "OpenHands supports defining multiple named LLM configurations in your `config.toml` file. This feature allows you to use different LLM configuratio..."
+---
 
 OpenHands supports defining multiple named LLM configurations in your `config.toml` file. This feature allows you to use different LLM configurations for different purposes, such as using a cheaper model for tasks that don't require high-quality responses, or using different models with different parameters for specific agents.
 
@@ -131,6 +134,14 @@ Use this configuration when you want to let an LLM draft edits before making the
 - Refine existing content while maintaining its core meaning
 - Make precise, focused changes to code or text
 
-:::note
+<Note>
+```
 Custom LLM configurations are only available when using OpenHands in development mode, via `main.py` or `cli.py`. When running via `docker run`, please use the standard configuration options.
-:::
+```
+</CodeGroup>
+
+</Note>
+```
+
+```
+</CodeGroup>

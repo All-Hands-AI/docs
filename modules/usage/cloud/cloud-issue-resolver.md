@@ -1,11 +1,14 @@
-# Cloud Issue Resolver
+---
+title: "Cloud Issue Resolver"
+description: "The Cloud Issue Resolver automates code fixes and provides intelligent assistance for your repositories on GitHub."
+---
 
 The Cloud Issue Resolver automates code fixes and provides intelligent assistance for your repositories on GitHub.
 
 ## Setup
 
 The Cloud Issue Resolver is available automatically when you grant OpenHands Cloud repository access:
-- [GitHub repository access](./github-installation#adding-repository-access)
+- [GitHub repository access](/modules/usage/github-installation#adding-repository-access)
 
 ## Usage
 

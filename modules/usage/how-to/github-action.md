@@ -1,4 +1,7 @@
-# Using the OpenHands GitHub Action
+---
+title: "Using the OpenHands GitHub Action"
+description: "This guide explains how to use the OpenHands GitHub Action in your own projects."
+---
 
 This guide explains how to use the OpenHands GitHub Action in your own projects.
 
@@ -14,7 +17,7 @@ The action will automatically trigger and attempt to resolve the issue.
 ## Installing the Action in a New Repository
 
 To install the OpenHands GitHub Action in your own repository, follow
-the [README for the OpenHands Resolver](https://github.com/All-Hands-AI/OpenHands/blob/main/openhands/resolver/README.md).
+the [README for the OpenHands Resolver](/modules/usage/https://github.com/All-Hands-AI/OpenHands/blob/main/openhands/resolver/README).
 
 ## Usage Tips
 
@@ -35,7 +38,7 @@ the [README for the OpenHands Resolver](https://github.com/All-Hands-AI/OpenHand
 
 ### Add custom repository settings
 
-You can provide custom directions for OpenHands by following the [README for the resolver](https://github.com/All-Hands-AI/OpenHands/blob/main/openhands/resolver/README.md#providing-custom-instructions).
+You can provide custom directions for OpenHands by following the [README for the resolver](/modules/usage/https://github.com/All-Hands-AI/OpenHands/blob/main/openhands/resolver/README#providing-custom-instructions).
 
 ### Custom configurations
 

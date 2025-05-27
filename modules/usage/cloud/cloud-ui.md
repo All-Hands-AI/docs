@@ -1,4 +1,7 @@
-# Cloud UI
+---
+title: "Cloud UI"
+description: "The Cloud UI provides a web interface for interacting with OpenHands AI. This page explains how to access and use the OpenHands Cloud UI."
+---
 
 The Cloud UI provides a web interface for interacting with OpenHands AI. This page explains how to access and use the OpenHands Cloud UI.
 
@@ -9,7 +12,7 @@ The OpenHands Cloud UI can be accessed at [app.all-hands.dev](https://app.all-ha
 
 ## Key Features
 
-For detailed information about the features available in the OpenHands Cloud UI, please refer to the [Key Features](../key-features.md) section of the documentation.
+For detailed information about the features available in the OpenHands Cloud UI, please refer to the [Key Features](/modules/usage/../key-features) section of the documentation.
 
 ## Settings
 
@@ -22,5 +25,5 @@ The settings page allows you to:
 
 ## Next Steps
 
-- [Use the Cloud Issue Resolver](./cloud-issue-resolver.md) to automate code fixes and get assistance.
-- [Learn about the Cloud API](./cloud-api.md) for programmatic access.
+- [Use the Cloud Issue Resolver](/modules/usage//modules/usage/cloud-issue-resolver) to automate code fixes and get assistance.
+- [Learn about the Cloud API](/modules/usage//modules/usage/cloud-api) for programmatic access.

@@ -1,4 +1,7 @@
-# 📦 Docker Runtime
+---
+title: "📦 Docker Runtime"
+description: "The OpenHands Docker Runtime is the core component that enables secure and flexible execution of AI agent's action. It creates a sandboxed environm..."
+---
 
 The OpenHands Docker Runtime is the core component that enables secure and flexible execution of AI agent's action.
 It creates a sandboxed environment using Docker, where arbitrary code can be run safely without risking the host system.
@@ -19,23 +22,35 @@ The OpenHands Runtime system uses a client-server architecture implemented with 
 
 ```mermaid
 graph TD
-    A[User-provided Custom Docker Image] --> B[OpenHands Backend]
+    A[User-provided Custom Docker Image] --<CodeGroup>
+```
+B[OpenHands Backend]
     B -->|Builds| C[OH Runtime Image]
     C -->|Launches| D[Action Executor]
     D -->|Initializes| E[Browser]
     D -->|Initializes| F[Bash Shell]
     D -->|Initializes| G[Plugins]
     G -->|Initializes| L[Jupyter Server]
+```
+</CodeGroup>
 
-    B -->|Spawn| H[Agent]
+    B --<CodeGroup>
+```
+|Spawn| H[Agent]
     B -->|Spawn| I[EventStream]
     I <--->|Execute Action to
     Get Observation
     via REST API
     | D
+```
+</CodeGroup>
 
-    H -->|Generate Action| I
+    H --<CodeGroup>
+```
+|Generate Action| I
     I -->|Obtain Observation| H
+```
+</CodeGroup>
 
     subgraph "Docker Container"
     D

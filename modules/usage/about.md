@@ -1,4 +1,7 @@
-# About OpenHands
+---
+title: "About OpenHands"
+description: "## Research Strategy"
+---
 
 ## Research Strategy
 

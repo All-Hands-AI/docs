@@ -1,4 +1,7 @@
-# Daytona Runtime
+---
+title: "Daytona Runtime"
+description: "You can use [Daytona](https://www.daytona.io/) as a runtime provider:"
+---
 
 You can use [Daytona](https://www.daytona.io/) as a runtime provider:
 
@@ -9,17 +12,29 @@ You can use [Daytona](https://www.daytona.io/) as a runtime provider:
 4. Once the key is generated, copy it.
 
 ## Step 2: Set Your API Key as an Environment Variable
-Run the following command in your terminal, replacing `<your-api-key>` with the actual key you copied:
+Run the following command in your terminal, replacing `<your-api-key<CodeGroup>
+```
+` with the actual key you copied:
+```
+</CodeGroup>
 
 ### Mac/Linux:
 ```bash
-export DAYTONA_API_KEY="<your-api-key>"
+export DAYTONA_API_KEY="<your-api-key<CodeGroup>
 ```
+"
+```
+```
+</CodeGroup>
 
 ### Windows PowerShell:
 ```powershell
-$env:DAYTONA_API_KEY="<your-api-key>"
+$env:DAYTONA_API_KEY="<your-api-key<CodeGroup>
 ```
+"
+```
+```
+</CodeGroup>
 
 This step ensures that OpenHands can authenticate with the Daytona platform when it runs.
 
@@ -43,4 +58,4 @@ powershell -Command "irm https://get.daytona.io/openhands-windows | iex"
 
 Once executed, OpenHands should be running locally and ready for use.
 
-For more details and manual initialization, view the entire [README.md](https://github.com/All-Hands-AI/OpenHands/blob/main/openhands/runtime/impl/daytona/README.md)
+For more details and manual initialization, view the entire [README.md](/modules/usage/https://github.com/All-Hands-AI/OpenHands/blob/main/openhands/runtime/impl/daytona/README)

@@ -1,4 +1,7 @@
-# OpenRouter
+---
+title: "OpenRouter"
+description: "OpenHands uses LiteLLM to make calls to chat models on OpenRouter. You can find their documentation on using  OpenRouter as a provider [here](https..."
+---
 
 OpenHands uses LiteLLM to make calls to chat models on OpenRouter. You can find their documentation on using 
 OpenRouter as a provider [here](https://docs.litellm.ai/docs/providers/openrouter).

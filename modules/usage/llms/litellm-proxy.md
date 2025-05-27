@@ -1,4 +1,7 @@
-# LiteLLM Proxy
+---
+title: "LiteLLM Proxy"
+description: "OpenHands supports using the [LiteLLM proxy](https://docs.litellm.ai/docs/proxy/quick_start) to access various LLM providers."
+---
 
 OpenHands supports using the [LiteLLM proxy](https://docs.litellm.ai/docs/proxy/quick_start) to access various LLM providers.
 

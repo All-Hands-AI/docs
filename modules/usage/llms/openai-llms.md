@@ -1,4 +1,7 @@
-# OpenAI
+---
+title: "OpenAI"
+description: "OpenHands uses LiteLLM to make calls to OpenAI's chat models. You can find their documentation on using OpenAI as a  provider [here](https://docs.l..."
+---
 
 OpenHands uses LiteLLM to make calls to OpenAI's chat models. You can find their documentation on using OpenAI as a 
 provider [here](https://docs.litellm.ai/docs/providers/openai).

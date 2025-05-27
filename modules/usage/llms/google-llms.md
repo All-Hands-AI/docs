@@ -1,4 +1,7 @@
-# Google Gemini/Vertex
+---
+title: "Google Gemini/Vertex"
+description: "OpenHands uses LiteLLM to make calls to Google's chat models. You can find their documentation on using Google as a provider:"
+---
 
 OpenHands uses LiteLLM to make calls to Google's chat models. You can find their documentation on using Google as a provider:
 
@@ -20,10 +23,14 @@ To use Vertex AI through Google Cloud Platform when running OpenHands, you'll ne
 variables using `-e` in the [docker run command](../installation#running-openhands):
 
 ```
-GOOGLE_APPLICATION_CREDENTIALS="<json-dump-of-gcp-service-account-json>"
+GOOGLE_APPLICATION_CREDENTIALS="<json-dump-of-gcp-service-account-json<CodeGroup>
+```
+"
 VERTEXAI_PROJECT="<your-gcp-project-id>"
 VERTEXAI_LOCATION="<your-gcp-location>"
 ```
+```
+</CodeGroup>
 
 Then set the following in the OpenHands UI through the Settings under the `LLM` tab:
 - `LLM Provider` to `VertexAI`

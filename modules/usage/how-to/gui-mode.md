@@ -1,4 +1,7 @@
-# GUI Mode
+---
+title: "GUI Mode"
+description: "OpenHands provides a Graphical User Interface (GUI) mode for interacting with the AI assistant."
+---
 
 OpenHands provides a Graphical User Interface (GUI) mode for interacting with the AI assistant.
 
@@ -26,10 +29,9 @@ OpenHands supports multiple version control providers. You can configure tokens 
 
 OpenHands automatically exports a `GITHUB_TOKEN` to the shell environment if provided:
 
-<details>
-  <summary>Setting Up a GitHub Token</summary>
-
-  1. **Generate a Personal Access Token (PAT)**:
+<Accordion title="Setting Up a GitHub Token"<CodeGroup>
+```
+1. **Generate a Personal Access Token (PAT)**:
    - On GitHub, go to Settings > Developer Settings > Personal Access Tokens > Tokens (classic).
    - **New token (classic)**
      - Required scopes:
@@ -42,12 +44,15 @@ OpenHands automatically exports a `GITHUB_TOKEN` to the shell environment if pro
    - Navigate to the `Git` tab.
    - Paste your token in the `GitHub Token` field.
    - Click `Save Changes` to apply the changes.
-</details>
+</Accordion>
+```
+</CodeGroup>
 
-<details>
-  <summary>Organizational Token Policies</summary>
-
-  If you're working with organizational repositories, additional setup may be required:
+<Accordion title="Organizational Token Policies"<CodeGroup>
+```
+If you're working with organizational repositories, additional setup may be required:
+```
+</CodeGroup>
 
   1. **Check Organization Requirements**:
    - Organization admins may enforce specific token policies.
@@ -58,10 +63,11 @@ OpenHands automatically exports a `GITHUB_TOKEN` to the shell environment if pro
    - Look for the organization under `Organization access`.
    - If required, click `Enable SSO` next to your organization.
    - Complete the SSO authorization process.
-</details>
-
-<details>
-  <summary>Troubleshooting</summary>
+</Accordion<CodeGroup>
+```
+<Accordion title="Troubleshooting">
+```
+</CodeGroup>
 
   Common issues and solutions:
 
@@ -80,16 +86,17 @@ OpenHands automatically exports a `GITHUB_TOKEN` to the shell environment if pro
      - The app will show a green checkmark if the token is valid.
      - Try accessing a repository to confirm permissions.
      - Check the browser console for any error messages.
-</details>
-
+</Accordion<CodeGroup>
+```
 #### GitLab Token Setup
+```
+</CodeGroup>
 
 OpenHands automatically exports a `GITLAB_TOKEN` to the shell environment if provided:
 
-<details>
-  <summary>Setting Up a GitLab Token</summary>
-
-  1. **Generate a Personal Access Token (PAT)**:
+<Accordion title="Setting Up a GitLab Token"<CodeGroup>
+```
+1. **Generate a Personal Access Token (PAT)**:
    - On GitLab, go to User Settings > Access Tokens.
    - Create a new token with the following scopes:
      - `api` (API access)
@@ -102,12 +109,15 @@ OpenHands automatically exports a `GITLAB_TOKEN` to the shell environment if pro
    - Navigate to the `Git` tab.
    - Paste your token in the `GitLab Token` field.
    - Click `Save Changes` to apply the changes.
-</details>
+</Accordion>
+```
+</CodeGroup>
 
-<details>
-  <summary>Troubleshooting</summary>
-
-  Common issues and solutions:
+<Accordion title="Troubleshooting"<CodeGroup>
+```
+Common issues and solutions:
+```
+</CodeGroup>
 
   - **Token Not Recognized**:
      - Ensure the token is properly saved in settings.
@@ -118,9 +128,11 @@ OpenHands automatically exports a `GITLAB_TOKEN` to the shell environment if pro
      - Verify project access permissions.
      - Check if the token has the necessary scopes.
      - For group/organization repositories, ensure you have proper access.
-</details>
-
+</Accordion<CodeGroup>
+```
 ### Advanced Settings
+```
+</CodeGroup>
 
 1. Inside the Settings page, under the `LLM` tab, toggle `Advanced` options to access additional settings.
 2. Use the `Custom Model` text box to manually enter a model if it's not in the list.
@@ -136,7 +148,7 @@ OpenHands automatically exports a `GITLAB_TOKEN` to the shell environment if pro
 ## Tips for Effective Use
 
 - Be specific in your requests to get the most accurate and helpful responses, as described in the [prompting best practices](../prompting/prompting-best-practices).
-- Use one of the recommended models, as described in the [LLMs section](usage/llms/llms.md).
+- Use one of the recommended models, as described in the [LLMs section](/modules/usage/usage/llms/llms).
 
 Remember, the GUI mode of OpenHands is designed to make your interaction with the AI assistant as smooth and intuitive
 as possible. Don't hesitate to explore its features to maximize your productivity.

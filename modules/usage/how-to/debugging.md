@@ -1,4 +1,7 @@
-# Debugging
+---
+title: "Debugging"
+description: "The following is intended as a primer on debugging OpenHands for Development purposes."
+---
 
 The following is intended as a primer on debugging OpenHands for Development purposes.
 

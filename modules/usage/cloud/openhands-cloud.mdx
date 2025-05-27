@@ -1,4 +1,7 @@
-# Openhands Cloud
+---
+title: "Openhands Cloud"
+description: "OpenHands Cloud is the cloud hosted version of OpenHands by All Hands AI."
+---
 
 OpenHands Cloud is the cloud hosted version of OpenHands by All Hands AI.
 
@@ -6,7 +9,7 @@ OpenHands Cloud is the cloud hosted version of OpenHands by All Hands AI.
 
 OpenHands Cloud can be accessed at https://app.all-hands.dev/.
 
-You can also interact with OpenHands Cloud programmatically using the [API](./cloud-api).
+You can also interact with OpenHands Cloud programmatically using the [API](/modules/usage/cloud-api).
 
 ## Getting Started
 
@@ -27,10 +30,9 @@ After visiting OpenHands Cloud, you will be asked to connect with your GitHub or
 You can grant OpenHands specific repository access:
 1. Click `Add GitHub repos` on the Home page.
 2. Select the organization, then choose the specific repositories to grant OpenHands access to.
-   <details>
-     <summary>Permission Details for Repository Access</summary>
-
-     Openhands requests short-lived tokens (8-hour expiry) with these permissions:
+   <Accordion title="Permission Details for Repository Access"<CodeGroup>
+```
+Openhands requests short-lived tokens (8-hour expiry) with these permissions:
      - Actions: Read and write
      - Administration: Read-only
      - Commit statuses: Read and write
@@ -40,13 +42,17 @@ You can grant OpenHands specific repository access:
      - Pull requests: Read and write
      - Webhooks: Read and write
      - Workflows: Read and write
+```
+</CodeGroup>
 
      Repository access for a user is granted based on:
      - Granted permission for the repository.
      - User's GitHub permissions (owner/collaborator).
-   </details>
-
+   </Accordion<CodeGroup>
+```
 3. Click on `Install & Authorize`.
+```
+</CodeGroup>
 
 #### Modifying Repository Access
 

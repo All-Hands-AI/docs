@@ -12,7 +12,7 @@ This mode is different from the [headless mode](/modules/usage/how-to/headless-m
 
 ### Running with Python
 
-1. Ensure you have followed the [Development setup instructions](https://github.com/All-Hands-AI/OpenHands/blob/main/Development.md).
+1. Ensure you have followed the [Development setup instructions](/modules/usage/https://github.com/All-Hands-AI/OpenHands/blob/main/Development).
 2. Set your model, API key, and other preferences using environment variables or with the [`config.toml`](https://github.com/All-Hands-AI/OpenHands/blob/main/config.template.toml) file.
 3. Launch an interactive OpenHands conversation from the command line:
 

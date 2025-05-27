@@ -1,4 +1,7 @@
-# GitLab Installation
+---
+title: "GitLab Installation"
+description: "This guide walks you through the process of installing and configuring OpenHands Cloud for your GitLab repositories."
+---
 
 This guide walks you through the process of installing and configuring OpenHands Cloud for your GitLab repositories.
 
@@ -18,5 +21,5 @@ This guide walks you through the process of installing and configuring OpenHands
 
 ## Next Steps
 
-- [Access the Cloud UI](./cloud-ui.md) to interact with the web interface
-- [Use the Cloud API](./cloud-api.md) to programmatically interact with OpenHands
+- [Access the Cloud UI](/modules/usage//modules/usage/cloud-ui) to interact with the web interface
+- [Use the Cloud API](/modules/usage//modules/usage/cloud-api) to programmatically interact with OpenHands

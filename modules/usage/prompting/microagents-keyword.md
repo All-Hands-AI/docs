@@ -1,4 +1,7 @@
-# Keyword-Triggered Microagents
+---
+title: "Keyword-Triggered Microagents"
+description: "## Purpose"
+---
 
 ## Purpose
 

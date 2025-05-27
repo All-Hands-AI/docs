@@ -1,4 +1,7 @@
-# Repository Customization
+---
+title: "Repository Customization"
+description: "You can customize how OpenHands interacts with your repository by creating a `.openhands` directory at the root level."
+---
 
 You can customize how OpenHands interacts with your repository by creating a
 `.openhands` directory at the root level.

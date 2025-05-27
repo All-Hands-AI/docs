@@ -1,4 +1,7 @@
-# General Microagents
+---
+title: "General Microagents"
+description: "## Purpose"
+---
 
 ## Purpose
 

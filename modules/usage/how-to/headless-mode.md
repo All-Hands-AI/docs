@@ -1,4 +1,7 @@
-# Headless Mode
+---
+title: "Headless Mode"
+description: "You can run OpenHands with a single command, without starting the web application. This makes it easy to write scripts and automate tasks with Open..."
+---
 
 You can run OpenHands with a single command, without starting the web application.
 This makes it easy to write scripts and automate tasks with OpenHands.
@@ -8,7 +11,7 @@ This is different from [CLI Mode](cli-mode), which is interactive, and better fo
 ## With Python
 
 To run OpenHands in headless mode with Python:
-1. Ensure you have followed the [Development setup instructions](https://github.com/All-Hands-AI/OpenHands/blob/main/Development.md).
+1. Ensure you have followed the [Development setup instructions](/modules/usage/https://github.com/All-Hands-AI/OpenHands/blob/main/Development).
 2. Run the following command:
 ```bash
 poetry run python -m openhands.core.main -t "write a bash script that prints hi"

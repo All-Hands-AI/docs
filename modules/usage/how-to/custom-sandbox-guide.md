@@ -1,9 +1,21 @@
-# Custom Sandbox
+---
+title: "Custom Sandbox"
+description: "<Note>
+```
+This guide is for users that would like to use their own custom Docker image for the runtime. For example with certain tools or programming..."
+---
+```
+</CodeGroup>
 
-:::note
+
+</Note>
+```
+note
 This guide is for users that would like to use their own custom Docker image for the runtime. For example
 with certain tools or programming languages pre-installed.
 :::
+```
+</CodeGroup>
 
 The sandbox is where the agent performs its tasks. Instead of running commands directly on your computer
 (which could be risky), the agent runs them inside a Docker container.
@@ -49,7 +61,11 @@ This will produce a new image called `custom-image`, which will be available in 
 ## Using the Docker Command
 
 When running OpenHands using [the docker command](/modules/usage/installation#start-the-app), replace
-`-e SANDBOX_RUNTIME_CONTAINER_IMAGE=...` with `-e SANDBOX_BASE_CONTAINER_IMAGE=<custom image name>`:
+`-e SANDBOX_RUNTIME_CONTAINER_IMAGE=...` with `-e SANDBOX_BASE_CONTAINER_IMAGE=<custom image name<CodeGroup>
+```
+`:
+```
+</CodeGroup>
 
 ```commandline
 docker run -it --rm --pull=always \
@@ -61,7 +77,7 @@ docker run -it --rm --pull=always \
 
 ### Setup
 
-First, ensure you can run OpenHands by following the instructions in [Development.md](https://github.com/All-Hands-AI/OpenHands/blob/main/Development.md).
+First, ensure you can run OpenHands by following the instructions in [Development.md](/modules/usage/https://github.com/All-Hands-AI/OpenHands/blob/main/Development).
 
 ### Specify the Base Sandbox Image
 

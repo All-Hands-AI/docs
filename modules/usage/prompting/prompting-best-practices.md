@@ -1,4 +1,7 @@
-# Prompting Best Practices
+---
+title: "Prompting Best Practices"
+description: "When working with OpenHands AI software developer, providing clear and effective prompts is key to getting accurate and useful responses. This guid..."
+---
 
 When working with OpenHands AI software developer, providing clear and effective prompts is key to getting accurate
 and useful responses. This guide outlines best practices for crafting effective prompts.

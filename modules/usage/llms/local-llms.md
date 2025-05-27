@@ -1,9 +1,21 @@
-# Local LLMs
+---
+title: "Local LLMs"
+description: "<Warning>
+```
+When using a Local LLM, OpenHands may have limited functionality. It is highly recommended that you use GPUs to serve local models for o..."
+---
+```
+</CodeGroup>
 
-:::warning
+
+</Warning>
+```
+warning
 When using a Local LLM, OpenHands may have limited functionality.
 It is highly recommended that you use GPUs to serve local models for optimal experience.
 :::
+```
+</CodeGroup>
 
 ## News
 
@@ -26,27 +38,27 @@ We recommend using [LMStudio](https://lmstudio.ai/) for serving these models loc
 
 3. Open LM Studio application, you should first switch to `power user` mode, and then open the developer tab:
   
-![image](./screenshots/1_select_power_user.png)
+![image](/modules/usage/1_select_power_user.png)
 
 4. Then click `Select a model to load` on top of the application:
 
-![image](./screenshots/2_select_model.png)
+![image](/modules/usage/2_select_model.png)
 
 5. And choose the model you want to use, holding `option` on mac to enable advanced loading options:
 
-![image](./screenshots/3_select_devstral.png)
+![image](/modules/usage/3_select_devstral.png)
 
 6. You should then pick an appropriate context window for OpenHands based on your hardware configuration (larger than 32768 is recommended for using OpenHands, but too large may cause you to run out of memory); Flash attention is also recommended if it works on your machine.
 
-![image](./screenshots/4_set_context_window.png)
+![image](/modules/usage/4_set_context_window.png)
 
 7. And you should start the server (if it is not already in `Running` status), un-toggle `Serve on Local Network` and remember the port number of the LMStudio URL (`1234` is the port number for `http://127.0.0.1:1234` in this example):
 
-![image](./screenshots/5_copy_url.png)
+![image](/modules/usage/5_copy_url.png)
 
 8. Finally, you can click the `copy` button near model name to copy the model name (`imported-models/uncategorized/devstralq4_k_m.gguf` in this example):
 
-![image](./screenshots/6_copy_to_get_model_name.png)
+![image](/modules/usage/6_copy_to_get_model_name.png)
 
 ### Start OpenHands with locally served model
 
@@ -58,7 +70,11 @@ export LMSTUDIO_URL="http://host.docker.internal:1234"  # <- Replace this with t
 
 docker pull docker.all-hands.dev/all-hands-ai/runtime:0.39-nikolaik
 
-mkdir -p ~/.openhands-state && echo '{"language":"en","agent":"CodeActAgent","max_iterations":null,"security_analyzer":null,"confirmation_mode":false,"llm_model":"lm_studio/'$LMSTUDIO_MODEL_NAME'","llm_api_key":"dummy","llm_base_url":"'$LMSTUDIO_URL/v1'","remote_runtime_resource_factor":null,"github_token":null,"enable_default_condenser":true,"user_consents_to_analytics":true}' > ~/.openhands-state/settings.json
+mkdir -p ~/.openhands-state && echo '{"language":"en","agent":"CodeActAgent","max_iterations":null,"security_analyzer":null,"confirmation_mode":false,"llm_model":"lm_studio/'$LMSTUDIO_MODEL_NAME'","llm_api_key":"dummy","llm_base_url":"'$LMSTUDIO_URL/v1'","remote_runtime_resource_factor":null,"github_token":null,"enable_default_condenser":true,"user_consents_to_analytics":true}' <CodeGroup>
+```
+~/.openhands-state/settings.json
+```
+</CodeGroup>
 
 docker run -it --rm --pull=always \
     -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.39-nikolaik \
@@ -89,11 +105,17 @@ INFO:     Uvicorn running on http://0.0.0.0:3000 (Press CTRL+C to quit)
 
 ### Download model checkpoints
 
-:::note
+<Note>
+```
 The model checkpoints downloaded here should NOT be in GGUF format.
-:::
+```
+</CodeGroup>
 
+</Note>
+```
 For example, to download [OpenHands LM 32B v0.1](https://huggingface.co/all-hands/openhands-lm-32b-v0.1):
+```
+</CodeGroup>
 
 ```bash
 huggingface-cli download all-hands/openhands-lm-32b-v0.1 --local-dir all-hands/openhands-lm-32b-v0.1
@@ -138,7 +160,7 @@ Run OpenHands using [the official docker run command](../installation#start-the-
 
 #### Using Development Mode
 
-Use the instructions in [Development.md](https://github.com/All-Hands-AI/OpenHands/blob/main/Development.md) to build OpenHands.
+Use the instructions in [Development.md](/modules/usage/https://github.com/All-Hands-AI/OpenHands/blob/main/Development) to build OpenHands.
 Ensure `config.toml` exists by running `make setup-config` which will create one for you. In the `config.toml`, enter the following:
 
 ```
@@ -157,6 +179,10 @@ Start OpenHands using `make run`.
 Once OpenHands is running, you'll need to set the following in the OpenHands UI through the Settings under the `LLM` tab: 
 1. Enable `Advanced` options.
 2. Set the following:
-- `Custom Model` to `openai/<served-model-name>` (e.g. `openai/openhands-lm-32b-v0.1`)
+- `Custom Model` to `openai/<served-model-name<CodeGroup>
+```
+` (e.g. `openai/openhands-lm-32b-v0.1`)
 - `Base URL` to `http://host.docker.internal:8000`
 - `API key` to the same string you set when serving the model (e.g. `mykey`)
+```
+</CodeGroup>

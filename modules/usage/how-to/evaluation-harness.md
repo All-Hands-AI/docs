@@ -1,10 +1,13 @@
-# Evaluation
+---
+title: "Evaluation"
+description: "This guide provides an overview of how to integrate your own evaluation benchmark into the OpenHands framework."
+---
 
 This guide provides an overview of how to integrate your own evaluation benchmark into the OpenHands framework.
 
 ## Setup Environment and LLM Configuration
 
-Please follow instructions [here](https://github.com/All-Hands-AI/OpenHands/blob/main/Development.md) to setup your local development environment.
+Please follow instructions [here](/modules/usage/https://github.com/All-Hands-AI/OpenHands/blob/main/Development) to setup your local development environment.
 OpenHands in development mode uses `config.toml` to keep track of most configurations.
 
 Here's an example configuration file you can use to define and use multiple LLMs:
@@ -34,11 +37,15 @@ OpenHands can be run from the command line using the following format:
 
 ```bash
 poetry run python ./openhands/core/main.py \
-        -i <max_iterations> \
+        -i <max_iterations<CodeGroup>
+```
+\
         -t "<task_description>" \
         -c <agent_class> \
         -l <llm_config>
 ```
+```
+</CodeGroup>
 
 For example:
 
@@ -109,7 +116,9 @@ To create an evaluation workflow for your benchmark, follow these steps:
 
 2. Create a configuration:
    ```python
-   def get_config(instance: pd.Series, metadata: EvalMetadata) -> AppConfig:
+   def get_config(instance: pd.Series, metadata: EvalMetadata) -<CodeGroup>
+```
+AppConfig:
        config = AppConfig(
            default_agent=metadata.agent_class,
            runtime='docker',
@@ -123,6 +132,8 @@ To create an evaluation workflow for your benchmark, follow these steps:
        config.set_llm_config(metadata.llm_config)
        return config
    ```
+```
+</CodeGroup>
 
 3. Initialize the runtime and set up the evaluation environment:
    ```python
@@ -135,11 +146,15 @@ To create an evaluation workflow for your benchmark, follow these steps:
 4. Create a function to process each instance:
    ```python
    from openhands.utils.async_utils import call_async_from_sync
-   def process_instance(instance: pd.Series, metadata: EvalMetadata) -> EvalOutput:
+   def process_instance(instance: pd.Series, metadata: EvalMetadata) -<CodeGroup>
+```
+EvalOutput:
        config = get_config(instance, metadata)
        runtime = create_runtime(config)
        call_async_from_sync(runtime.connect)
        initialize_runtime(runtime, instance)
+```
+</CodeGroup>
 
        instruction = get_instruction(instance, metadata)
 
@@ -246,12 +261,16 @@ This approach allows for automated handling of both concrete actions and simulat
 Here's an example of a `user_response_fn` used in the SWE-Bench evaluation:
 
 ```python
-def codeact_user_response(state: State | None) -> str:
+def codeact_user_response(state: State | None) -<CodeGroup>
+```
+str:
     msg = (
         'Please continue working on the task on whatever approach you think is suitable.\n'
         'If you think you have solved the task, please first send your answer to user through message and then <execute_bash> exit </execute_bash>.\n'
         'IMPORTANT: YOU SHOULD NEVER ASK FOR HUMAN HELP.\n'
     )
+```
+</CodeGroup>
 
     if state and state.history:
         # check if the agent has tried to talk to the user 3 times, if so, let the agent know it can give up
@@ -260,7 +279,9 @@ def codeact_user_response(state: State | None) -> str:
             for event in state.history
             if isinstance(event, MessageAction) and event.source == 'user'
         ]
-        if len(user_msgs) >= 2:
+        if len(user_msgs) <CodeGroup>
+```
+= 2:
             # let the agent know that it can give up when it has tried 3 times
             return (
                 msg
@@ -268,6 +289,8 @@ def codeact_user_response(state: State | None) -> str:
             )
     return msg
 ```
+```
+</CodeGroup>
 
 This function does the following:
 
