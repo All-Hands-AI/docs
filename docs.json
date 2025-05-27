@@ -1,0 +1,99 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "All Hands Docs",
+  "colors": {
+    "primary": "#ffd31c",
+    "light": "#ffd31c",
+    "dark": "#ffd31c"
+  },
+  "background": {
+    "color": {
+      "light": "#f8ece4",
+      "dark": "#000000"
+    }
+  },
+  "favicon": "/logo-square.png",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Overview",
+        "pages": [
+          "modules/index"
+        ]
+      },
+      {
+        "tab": "User Guides",
+        "groups": [
+          {
+            "group": " ",
+            "pages": [
+              "modules/usage/getting-started",
+              {
+                "group": "Installation",
+                "pages": [
+                  "modules/usage/installation",
+                  "modules/usage/key-features"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "OpenHands Cloud",
+            "pages": [
+              "modules/usage/cloud/openhands-cloud",
+              {
+                "group": "Installation",
+                "pages": [
+                  "modules/usage/cloud/github-installation",
+                  "modules/usage/cloud/gitlab-installation"
+                ]
+              },
+              "modules/usage/cloud/cloud-ui",
+              "modules/usage/cloud/cloud-issue-resolver",
+              "modules/usage/cloud/cloud-api"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Company",
+          "href": "https://www.all-hands.dev/",
+          "icon": "house"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://www.all-hands.dev/blog",
+          "icon": "newspaper"
+        }
+        
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Try it live",
+        "href": "https://app.all-hands.dev/"
+      }
+    ],
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/All-Hands-AI/OpenHands"
+    }
+  },
+  "footer": {
+    "socials": {
+      "slack": "https://join.slack.com/t/openhands-ai/shared_invite/zt-34zm4j0gj-Qz5kRHoca8DFCbqXPS~f_A",
+      "github": "https://github.com/All-Hands-AI/OpenHands",
+      "discord": "https://discord.gg/ESHStjSjD4"
+    }
+  }
+}
