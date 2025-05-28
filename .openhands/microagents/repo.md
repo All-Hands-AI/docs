@@ -7,6 +7,8 @@ The documentation repository follows the Mintlify structure:
 ```
 docs/
 ├── .openhands/                # OpenHands agent memory
+│   └── microagents/           # Microagents information
+├── logo/                      # Logo assets
 ├── modules/                   # Main documentation content
 │   ├── index.mdx              # Main landing page
 │   ├── usage/                 # Core OpenHands documentation
@@ -14,6 +16,7 @@ docs/
 │   │   ├── installation.mdx   # Installation guide
 │   │   ├── getting-started.mdx # Getting started guide
 │   │   ├── key-features.md    # Feature overview
+│   │   ├── agents.md          # Agents documentation
 │   │   ├── cloud/             # Cloud-specific documentation
 │   │   ├── how-to/            # How-to guides
 │   │   ├── llms/              # LLM configuration
@@ -24,16 +27,19 @@ docs/
 │   │   └── troubleshooting/   # Troubleshooting guides
 │   └── python/                # Python-specific documentation
 ├── static/                    # Static assets (images, etc.)
-├── docs.json                  # Main configuration file
-├── mint.json                  # Mintlify configuration
+│   └── img/                   # Image assets
+├── docs.json                  # Main configuration file (Mintlify)
+├── favicon.svg                # Favicon
+├── logo-square.png            # Square logo
+├── openapi.json               # OpenAPI specification
 ├── README.md                  # Repository README
 └── OPENHANDS_MIGRATION.md     # Documentation of migration process
 ```
 
 Key files:
 - `docs.json`: Defines the navigation structure and site configuration
-- `mint.json`: Contains Mintlify-specific settings
 - `modules/index.mdx`: Main landing page for the documentation
+- `openapi.json`: API specification
 
 ## Documentation Format Standards
 
@@ -110,48 +116,45 @@ Internal links should use absolute paths starting with `/`:
 The navigation structure is defined in `docs.json` and organized into the following tabs:
 
 1. **Overview** - General introduction to OpenHands
-   - About
-   - Key Features
+   - Main landing page
+   - About OpenHands
 
 2. **Getting Started** - Installation and basic usage
    - Installation
    - Getting Started
+   - Key Features
 
 3. **OpenHands Cloud** - Cloud-specific documentation
-   - Overview
-   - GitHub Installation
-   - GitLab Installation
+   - OpenHands Cloud Overview
+   - Installation (GitHub, GitLab)
    - Cloud UI
+   - Cloud Issue Resolver
    - Cloud API
-   - Issue Resolver
 
 4. **Usage Methods** - Different ways to use OpenHands
-   - CLI Mode
    - GUI Mode
+   - CLI Mode
    - Headless Mode
    - GitHub Action
-   - Evaluation Harness
-   - WebSocket Connection
 
 5. **Customization** - Repository customization and microagents
    - Repository Customization
-   - Microagents Overview
-   - Microagents Repo
-   - Microagents Org
-   - Microagents Public
-   - Microagents Keyword
+   - Microagents (Overview, Repo, Keyword, Org, Public)
+   - Prompting Best Practices
 
 6. **Advanced Configuration** - LLM and runtime configuration
-   - LLM Backends
-   - Runtime Options
+   - LLM Configuration (Azure, Google, Groq, Local, LiteLLM, OpenAI, OpenRouter)
+   - Runtime Configuration (Docker, Remote, Modal, Daytona, Local)
    - Configuration Options
+   - Custom Sandbox Guide
+   - MCP (Multi-Context Processing)
 
 7. **Developer Resources** - Architecture and development guides
    - Development Overview
-   - Backend Architecture
-   - Runtime Architecture
-   - Custom Sandbox Guide
+   - Architecture (Backend, Runtime)
    - Debugging
+   - Evaluation Harness
+   - WebSocket Connection
 
 8. **Help & Support** - Troubleshooting and feedback
    - Troubleshooting
@@ -168,14 +171,14 @@ To preview documentation changes locally:
    npm i -g mintlify
    ```
 
-2. Run the development server:
+2. Run the development server from the root directory (where docs.json is located):
    ```bash
    mintlify dev
    ```
 
 ### Troubleshooting
 
-- If Mintlify dev isn't running:
+- If Mintlify dev isn't running, reinstall dependencies:
   ```bash
   mintlify install
   ```
@@ -184,4 +187,4 @@ To preview documentation changes locally:
 
 ### Publishing Changes
 
-Changes are automatically deployed to production after pushing to the default branch if the GitHub App is installed.
+Changes are automatically deployed to production after pushing to the default branch if the GitHub App is installed. The GitHub App propagates changes from your repository to your deployment.
