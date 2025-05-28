@@ -2,38 +2,40 @@
 
 ## Repository Structure
 
-The documentation repository follows the Mintlify structure:
+The repository is now set up as a monorepo with documentation in a dedicated `docs/` folder:
 
 ```
-docs/
-├── .openhands/                # OpenHands agent memory
-│   └── microagents/           # Microagents information
-├── logo/                      # Logo assets
-├── modules/                   # Main documentation content
-│   ├── index.mdx              # Main landing page
-│   ├── usage/                 # Core OpenHands documentation
-│   │   ├── about.md           # About OpenHands
-│   │   ├── installation.mdx   # Installation guide
-│   │   ├── getting-started.mdx # Getting started guide
-│   │   ├── key-features.md    # Feature overview
-│   │   ├── agents.md          # Agents documentation
-│   │   ├── cloud/             # Cloud-specific documentation
-│   │   ├── how-to/            # How-to guides
-│   │   ├── llms/              # LLM configuration
-│   │   ├── prompting/         # Prompting guides
-│   │   ├── runtimes/          # Runtime configuration
-│   │   ├── architecture/      # Architecture documentation
-│   │   ├── customization/     # Customization guides
-│   │   └── troubleshooting/   # Troubleshooting guides
-│   └── python/                # Python-specific documentation
-├── static/                    # Static assets (images, etc.)
-│   └── img/                   # Image assets
-├── docs.json                  # Main configuration file (Mintlify)
-├── favicon.svg                # Favicon
-├── logo-square.png            # Square logo
-├── openapi.json               # OpenAPI specification
-├── README.md                  # Repository README
-└── OPENHANDS_MIGRATION.md     # Documentation of migration process
+/workspace/docs/              # Root repository
+├── .git/                     # Git repository
+├── .openhands/               # OpenHands agent memory
+│   └── microagents/          # Microagents information
+└── docs/                     # Documentation directory (Mintlify content)
+    ├── logo/                 # Logo assets
+    ├── modules/              # Main documentation content
+    │   ├── index.mdx         # Main landing page
+    │   ├── usage/            # Core OpenHands documentation
+    │   │   ├── about.md      # About OpenHands
+    │   │   ├── installation.mdx # Installation guide
+    │   │   ├── getting-started.mdx # Getting started guide
+    │   │   ├── key-features.md # Feature overview
+    │   │   ├── agents.md     # Agents documentation
+    │   │   ├── cloud/        # Cloud-specific documentation
+    │   │   ├── how-to/       # How-to guides
+    │   │   ├── llms/         # LLM configuration
+    │   │   ├── prompting/    # Prompting guides
+    │   │   ├── runtimes/     # Runtime configuration
+    │   │   ├── architecture/ # Architecture documentation
+    │   │   ├── customization/ # Customization guides
+    │   │   └── troubleshooting/ # Troubleshooting guides
+    │   └── python/           # Python-specific documentation
+    ├── static/               # Static assets (images, etc.)
+    │   └── img/              # Image assets
+    ├── docs.json             # Main configuration file (Mintlify)
+    ├── favicon.svg           # Favicon
+    ├── logo-square.png       # Square logo
+    ├── openapi.json          # OpenAPI specification
+    ├── README.md             # Repository README
+    └── OPENHANDS_MIGRATION.md # Documentation of migration process
 ```
 
 Key files:
@@ -188,3 +190,14 @@ To preview documentation changes locally:
 ### Publishing Changes
 
 Changes are automatically deployed to production after pushing to the default branch if the GitHub App is installed. The GitHub App propagates changes from your repository to your deployment.
+
+### Monorepo Configuration
+
+The repository is set up as a monorepo with documentation in a dedicated `docs/` folder. To configure Mintlify to deploy from this folder:
+
+1. Access Git Settings in the Mintlify dashboard: https://dashboard.mintlify.com/settings/deployment/git-settings
+2. Enable the "Set up as monorepo" toggle
+3. Enter "docs" as the relative path to your docs directory
+4. Save the changes
+
+This configuration tells Mintlify to look for documentation files in the `docs/` directory rather than the root of the repository.
