@@ -15,25 +15,47 @@
   },
   "favicon": "/logo-square.png",
   "navigation": {
-    "pages": [
-      "index",
-      "usage/installation",
-      "usage/getting-started",
-      "usage/key-features",
+    "tabs": [
       {
-        "group": "OpenHands Cloud",
+        "tab": "Getting started",
         "pages": [
-          "usage/cloud/openhands-cloud",
+          "index",
+          "usage/installation",
+          "usage/getting-started",
+          "usage/key-features",
           {
-            "group": "Installation",
+            "group": "OpenHands Cloud",
             "pages": [
-              "usage/cloud/github-installation",
-              "usage/cloud/gitlab-installation"
+              "usage/cloud/openhands-cloud",
+              {
+                "group": "Installation",
+                "pages": [
+                  "usage/cloud/github-installation",
+                  "usage/cloud/gitlab-installation"
+                ]
+              },
+              "usage/cloud/cloud-ui",
+              "usage/cloud/cloud-issue-resolver",
+              "usage/cloud/cloud-api"
             ]
-          },
-          "usage/cloud/cloud-ui",
-          "usage/cloud/cloud-issue-resolver",
-          "usage/cloud/cloud-api"
+          }
+        ]
+      },
+      {
+        "tab": "Prompting and Customization",
+        "pages": [
+          "usage/prompting/prompting-best-practices",
+          "usage/prompting/repository",
+          {
+            "group": "Microagents",
+            "pages": [
+              "usage/prompting/microagents-overview",
+              "usage/prompting/microagents-repo",
+              "usage/prompting/microagents-keyword",
+              "usage/prompting/microagents-org",
+              "usage/prompting/microagents-public"
+            ]
+          }
         ]
       }
     ],
