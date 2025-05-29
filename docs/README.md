@@ -1,32 +1,67 @@
-# Mintlify Starter Kit
+# Documentation Style Guide
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+## General Writing Principles
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+- **Clarity & Conciseness**: Always prioritize clarity and brevity. Avoid unnecessary jargon or overly complex explanations.
+Keep sentences short and to the point.
+- **Gradual Complexity**: Start with the simplest, most basic setup, and then gradually introduce more advanced
+concepts and configurations.
 
-### Development
+## Formatting Guidelines
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+### Headers
 
+Use **Title Case** for the first and second level headers.
+
+Example:
+  - **Basic Usage**
+  - **Advanced Configuration Options**
+
+### Lists
+
+When listing items or options, use bullet points to enhance readability.
+
+Example:
+  - Option A
+  - Option B
+  - Option C
+
+### Procedures
+
+For instructions or processes that need to be followed in a specific order, use numbered steps.
+
+Example:
+  1. Step one: Do this.
+    - First this sub step.
+    - Then this sub step.
+  2. Step two: Complete this action.
+  3. Step three: Verify the result.
+
+### Code Blocks
+
+* Use code blocks for multi-line inputs, outputs, commands and code samples.
+
+Example:
+```bash
+docker run -it \
+    -e THIS=this \
+    -e THAT=that
+    ...
 ```
-npm i -g mintlify
-```
 
-Run the following command at the root of your documentation (where docs.json is)
+### Use of Note and Warning
 
-```
-mintlify dev
-```
+When adding a note or warning, use the built-in note and warning syntax.
 
-### Publishing Changes
+Example:
+:::note
+This section is for advanced users only.
+:::
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+### Referring to UI Elements
 
-#### Troubleshooting
+When referencing UI elements, use ``.
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `docs.json`
+Example:
+1. Toggle the `Advanced` option
+2. Enter your model in the `Custom Model` textbox.
