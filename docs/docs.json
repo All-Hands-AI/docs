@@ -122,6 +122,22 @@
           "usage/troubleshooting/troubleshooting",
           "usage/feedback"
         ]
+      },
+      {
+        "tab": "For OpenHands Developers",
+        "pages": [
+          "usage/how-to/development-overview",
+          {
+            "group": "Architecture",
+            "pages": [
+              "usage/architecture/backend",
+              "usage/architecture/runtime"
+            ]
+          },
+          "usage/how-to/debugging",
+          "usage/how-to/evaluation-harness",
+          "usage/how-to/websocket-connection"
+        ]
       }
     ],
     "global": {
