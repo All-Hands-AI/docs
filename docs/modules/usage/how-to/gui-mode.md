@@ -30,7 +30,6 @@ OpenHands supports multiple version control providers. You can configure tokens 
 OpenHands automatically exports a `GITHUB_TOKEN` to the shell environment if provided:
 
 <Accordion title="Setting Up a GitHub Token">
-```
 1. **Generate a Personal Access Token (PAT)**:
    - On GitHub, go to Settings > Developer Settings > Personal Access Tokens > Tokens (classic).
    - **New token (classic)**
@@ -39,59 +38,52 @@ OpenHands automatically exports a `GITHUB_TOKEN` to the shell environment if pro
    - **Fine-Grained Tokens**
      - All Repositories (You can select specific repositories, but this will impact what returns in repo search)
      - Minimal Permissions ( Select `Meta Data = Read-only` read for search, `Pull Requests = Read and Write` and `Content = Read and Write` for branch creation)
-  2. **Enter Token in OpenHands**:
+2. **Enter Token in OpenHands**:
    - Click the Settings button (gear icon).
    - Navigate to the `Git` tab.
    - Paste your token in the `GitHub Token` field.
    - Click `Save Changes` to apply the changes.
 </Accordion>
-</CodeGroup>
 
 <Accordion title="Organizational Token Policies">
-```
 If you're working with organizational repositories, additional setup may be required:
-</CodeGroup>
 
-  1. **Check Organization Requirements**:
+1. **Check Organization Requirements**:
    - Organization admins may enforce specific token policies.
    - Some organizations require tokens to be created with SSO enabled.
    - Review your organization's [token policy settings](https://docs.github.com/en/organizations/managing-programmatic-access-to-your-organization/setting-a-personal-access-token-policy-for-your-organization).
-  2. **Verify Organization Access**:
+2. **Verify Organization Access**:
    - Go to your token settings on GitHub.
    - Look for the organization under `Organization access`.
    - If required, click `Enable SSO` next to your organization.
    - Complete the SSO authorization process.
 </Accordion>
-```
+
 <Accordion title="Troubleshooting">
-</CodeGroup>
+Common issues and solutions:
 
-  Common issues and solutions:
+- **Token Not Recognized**:
+   - Ensure the token is properly saved in settings.
+   - Check that the token hasn't expired.
+   - Verify the token has the required scopes.
+   - Try regenerating the token.
 
-  - **Token Not Recognized**:
-     - Ensure the token is properly saved in settings.
-     - Check that the token hasn't expired.
-     - Verify the token has the required scopes.
-     - Try regenerating the token.
+- **Organization Access Denied**:
+   - Check if SSO is required but not enabled.
+   - Verify organization membership.
+   - Contact organization admin if token policies are blocking access.
 
-  - **Organization Access Denied**:
-     - Check if SSO is required but not enabled.
-     - Verify organization membership.
-     - Contact organization admin if token policies are blocking access.
-
-  - **Verifying Token Works**:
-     - The app will show a green checkmark if the token is valid.
-     - Try accessing a repository to confirm permissions.
-     - Check the browser console for any error messages.
+- **Verifying Token Works**:
+   - The app will show a green checkmark if the token is valid.
+   - Try accessing a repository to confirm permissions.
+   - Check the browser console for any error messages.
 </Accordion>
-```
+
 #### GitLab Token Setup
-</CodeGroup>
 
 OpenHands automatically exports a `GITLAB_TOKEN` to the shell environment if provided:
 
 <Accordion title="Setting Up a GitLab Token">
-```
 1. **Generate a Personal Access Token (PAT)**:
    - On GitLab, go to User Settings > Access Tokens.
    - Create a new token with the following scopes:
@@ -100,32 +92,28 @@ OpenHands automatically exports a `GITLAB_TOKEN` to the shell environment if pro
      - `read_repository` (Read repository)
      - `write_repository` (Write repository)
    - Set an expiration date or leave it blank for a non-expiring token.
-  2. **Enter Token in OpenHands**:
+2. **Enter Token in OpenHands**:
    - Click the Settings button (gear icon).
    - Navigate to the `Git` tab.
    - Paste your token in the `GitLab Token` field.
    - Click `Save Changes` to apply the changes.
 </Accordion>
-</CodeGroup>
 
 <Accordion title="Troubleshooting">
-```
 Common issues and solutions:
-</CodeGroup>
 
-  - **Token Not Recognized**:
-     - Ensure the token is properly saved in settings.
-     - Check that the token hasn't expired.
-     - Verify the token has the required scopes.
+- **Token Not Recognized**:
+   - Ensure the token is properly saved in settings.
+   - Check that the token hasn't expired.
+   - Verify the token has the required scopes.
 
-  - **Access Denied**:
-     - Verify project access permissions.
-     - Check if the token has the necessary scopes.
-     - For group/organization repositories, ensure you have proper access.
+- **Access Denied**:
+   - Verify project access permissions.
+   - Check if the token has the necessary scopes.
+   - For group/organization repositories, ensure you have proper access.
 </Accordion>
-```
+
 ### Advanced Settings
-</CodeGroup>
 
 1. Inside the Settings page, under the `LLM` tab, toggle `Advanced` options to access additional settings.
 2. Use the `Custom Model` text box to manually enter a model if it's not in the list.
@@ -141,7 +129,7 @@ Common issues and solutions:
 ## Tips for Effective Use
 
 - Be specific in your requests to get the most accurate and helpful responses, as described in the [prompting best practices](../prompting/prompting-best-practices).
-- Use one of the recommended models, as described in the [LLMs section](/modules/usage/usage/llms/llms).
+- Use one of the recommended models, as described in the [LLMs section](../../llms/llms.md).
 
 Remember, the GUI mode of OpenHands is designed to make your interaction with the AI assistant as smooth and intuitive
 as possible. Don't hesitate to explore its features to maximize your productivity.

@@ -1,8 +1,7 @@
 ---
-sidebar_position: 9
+title: "Connecting to the WebSocket"
+description: "Guide for connecting to the OpenHands WebSocket API to receive real-time events and send actions to the agent"
 ---
-
-# Connecting to the WebSocket
 
 This guide explains how to connect to the OpenHands WebSocket API to receive real-time events and send actions to the agent.
 
@@ -40,30 +39,22 @@ const socket = io("http://localhost:3000", {
   }
 });
 
-socket.on("connect", () =<CodeGroup>
-{
+socket.on("connect", () => {
   console.log("Connected to OpenHands WebSocket");
 });
-</CodeGroup>
 
-socket.on("oh_event", (event) =<CodeGroup>
-{
+socket.on("oh_event", (event) => {
   console.log("Received event:", event);
 });
-</CodeGroup>
 
-socket.on("connect_error", (error) =<CodeGroup>
-{
+socket.on("connect_error", (error) => {
   console.error("Connection error:", error);
 });
-</CodeGroup>
 
-socket.on("disconnect", (reason) =<CodeGroup>
-{
+socket.on("disconnect", (reason) => {
   console.log("Disconnected:", reason);
 });
 ```
-</CodeGroup>
 
 ## Sending Actions to the Agent
 
@@ -91,8 +82,7 @@ The server emits events using the `oh_event` event type. Here are some common ev
 Example event handler:
 
 ```javascript
-socket.on("oh_event", (event) =<CodeGroup>
-{
+socket.on("oh_event", (event) => {
   if (event.source === "agent" && event.type === "message") {
     console.log("Agent says:", event.message);
   } else if (event.action === "run") {
@@ -101,7 +91,6 @@ socket.on("oh_event", (event) =<CodeGroup>
   }
 });
 ```
-</CodeGroup>
 
 ## Using Websocat for Testing
 
@@ -114,12 +103,10 @@ socket.on("oh_event", (event) =<CodeGroup>
 brew install websocat
 
 # On Linux
-curl -L https://github.com/vi/websocat/releases/download/v1.11.0/websocat.x86_64-unknown-linux-musl <CodeGroup>
-websocat
+curl -L https://github.com/vi/websocat/releases/download/v1.11.0/websocat.x86_64-unknown-linux-musl > websocat
 chmod +x websocat
 sudo mv websocat /usr/local/bin/
 ```
-</CodeGroup>
 
 ### Connecting to the WebSocket
 

@@ -1,0 +1,176 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "All Hands Docs",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/logo-square.png",
+  "colors": {
+    "primary": "#ffd31c",
+    "light": "#ffd31c",
+    "dark": "#ffd31c"
+  },
+  "background": {
+    "color": {
+      "light": "#f8ece4",
+      "dark": "#000000"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Try it live",
+      "url": "https://app.all-hands.dev/"
+    }
+  ],
+  "topbarCtaButton": {
+    "type": "github",
+    "url": "https://github.com/All-Hands-AI/OpenHands"
+  },
+  "anchors": [
+    {
+      "name": "Company",
+      "icon": "house",
+      "url": "https://www.all-hands.dev/"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://www.all-hands.dev/blog"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Overview",
+      "pages": [
+        "modules/index.mdx",
+        "modules/usage/about.md"
+      ]
+    },
+    {
+      "group": "Getting Started",
+      "pages": [
+        "modules/usage/installation.mdx",
+        "modules/usage/getting-started.mdx",
+        "modules/usage/key-features.md"
+      ]
+    },
+    {
+      "group": "OpenHands Cloud",
+      "pages": [
+        "modules/usage/cloud/openhands-cloud.mdx",
+        {
+          "group": "Installation",
+          "pages": [
+            "modules/usage/cloud/github-installation.mdx",
+            "modules/usage/cloud/gitlab-installation.mdx"
+          ]
+        },
+        "modules/usage/cloud/cloud-ui.mdx",
+        "modules/usage/cloud/cloud-issue-resolver.mdx",
+        "modules/usage/cloud/cloud-api.mdx"
+      ]
+    },
+    {
+      "group": "Usage Methods",
+      "pages": [
+        "modules/usage/how-to/gui-mode.md",
+        "modules/usage/how-to/cli-mode.md",
+        "modules/usage/how-to/headless-mode.md",
+        "modules/usage/how-to/github-action.md"
+      ]
+    },
+    {
+      "group": "Prompting",
+      "pages": [
+        "modules/usage/prompting/prompting-best-practices.md"
+      ]
+    },
+    {
+      "group": "Customization",
+      "pages": [
+        "modules/usage/customization/repository.md",
+        {
+          "group": "Microagents",
+          "pages": [
+            "modules/usage/prompting/microagents-overview.md",
+            "modules/usage/prompting/microagents-repo.md",
+            "modules/usage/prompting/microagents-keyword.md",
+            "modules/usage/prompting/microagents-org.md",
+            "modules/usage/prompting/microagents-public.md"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Advanced Configuration",
+      "pages": [
+        {
+          "group": "LLM Configuration",
+          "pages": [
+            "modules/usage/llms/llms.md",
+            {
+              "group": "Providers",
+              "pages": [
+                "modules/usage/llms/azure-llms.md",
+                "modules/usage/llms/google-llms.md",
+                "modules/usage/llms/groq.md",
+                "modules/usage/llms/local-llms.md",
+                "modules/usage/llms/litellm-proxy.md",
+                "modules/usage/llms/openai-llms.md",
+                "modules/usage/llms/openrouter.md"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "Runtime Configuration",
+          "pages": [
+            "modules/usage/runtimes-index.md",
+            "modules/usage/runtimes/docker.md",
+            "modules/usage/runtimes/remote.md",
+            "modules/usage/runtimes/modal.md",
+            "modules/usage/runtimes/daytona.md",
+            "modules/usage/runtimes/local.md"
+          ]
+        },
+        "modules/usage/configuration-options.md",
+        "modules/usage/how-to/custom-sandbox-guide.md",
+        "modules/usage/mcp.md"
+      ]
+    },
+    {
+      "group": "Troubleshooting",
+      "pages": [
+        "modules/usage/troubleshooting/troubleshooting.md"
+      ]
+    },
+    {
+      "group": "Feedback",
+      "pages": [
+        "modules/usage/feedback.md"
+      ]
+    },
+    {
+      "group": "For OpenHands Developers",
+      "pages": [
+        "modules/usage/how-to/development-overview.md",
+        {
+          "group": "Architecture",
+          "pages": [
+            "modules/usage/architecture/backend.mdx",
+            "modules/usage/architecture/runtime.md"
+          ]
+        },
+        "modules/usage/how-to/debugging.md",
+        "modules/usage/how-to/evaluation-harness.md",
+        "modules/usage/how-to/websocket-connection.md"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "slack": "https://join.slack.com/t/openhands-ai/shared_invite/zt-34zm4j0gj-Qz5kRHoca8DFCbqXPS~f_A",
+    "github": "https://github.com/All-Hands-AI/OpenHands",
+    "discord": "https://discord.gg/ESHStjSjD4"
+  }
+}

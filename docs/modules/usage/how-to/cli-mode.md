@@ -6,13 +6,13 @@ description: "CLI mode provides a powerful interactive Command-Line Interface (C
 CLI mode provides a powerful interactive Command-Line Interface (CLI) that lets you engage with OpenHands directly
 from your terminal.
 
-This mode is different from the [headless mode](/modules/usage/how-to/headless-mode), which is non-interactive and better for scripting.
+This mode is different from the [headless mode](./headless-mode), which is non-interactive and better for scripting.
 
 ## Getting Started
 
 ### Running with Python
 
-1. Ensure you have followed the [Development setup instructions](/modules/usage/https://github.com/All-Hands-AI/OpenHands/blob/main/Development).
+1. Ensure you have followed the [Development setup instructions](https://github.com/All-Hands-AI/OpenHands/blob/main/Development).
 2. Set your model, API key, and other preferences using environment variables or with the [`config.toml`](https://github.com/All-Hands-AI/OpenHands/blob/main/config.template.toml) file.
 3. Launch an interactive OpenHands conversation from the command line:
 
@@ -25,7 +25,7 @@ This command opens an interactive prompt where you can type tasks or commands an
 ### Running with Docker
 
 1. Set the following environment variables in your terminal:
-   - `SANDBOX_VOLUMES` to specify the directory you want OpenHands to access ([See using SANDBOX_VOLUMES for more info](/modules/usage/runtimes/docker#using-sandbox_volumes))
+   - `SANDBOX_VOLUMES` to specify the directory you want OpenHands to access ([See using SANDBOX_VOLUMES for more info](../../runtimes/docker.md#using-sandbox_volumes))
    - `LLM_MODEL` - the LLM model to use (e.g. `export LLM_MODEL="anthropic/claude-sonnet-4-20250514"`)
    - `LLM_API_KEY` - your API key (e.g. `export LLM_API_KEY="sk_test_12345"`)
 

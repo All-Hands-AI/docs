@@ -11,7 +11,7 @@ This is different from [CLI Mode](cli-mode), which is interactive, and better fo
 ## With Python
 
 To run OpenHands in headless mode with Python:
-1. Ensure you have followed the [Development setup instructions](/modules/usage/https://github.com/All-Hands-AI/OpenHands/blob/main/Development).
+1. Ensure you have followed the [Development setup instructions](https://github.com/All-Hands-AI/OpenHands/blob/main/Development).
 2. Run the following command:
 ```bash
 poetry run python -m openhands.core.main -t "write a bash script that prints hi"
@@ -25,7 +25,7 @@ You'll need to be sure to set your model, API key, and other settings via enviro
 To run OpenHands in Headless mode with Docker:
 
 1. Set the following environment variables in your terminal:
-   - `SANDBOX_VOLUMES` to specify the directory you want OpenHands to access ([See using SANDBOX_VOLUMES for more info](../runtimes/docker#using-sandbox_volumes))
+   - `SANDBOX_VOLUMES` to specify the directory you want OpenHands to access ([See using SANDBOX_VOLUMES for more info](../../runtimes/docker.md#using-sandbox_volumes))
    - `LLM_MODEL` - the LLM model to use (e.g. `export LLM_MODEL="anthropic/claude-sonnet-4-20250514"`)
    - `LLM_API_KEY` - your API key (e.g. `export LLM_API_KEY="sk_test_12345"`)
 
