@@ -115,6 +115,13 @@
           "usage/how-to/custom-sandbox-guide",
           "usage/mcp"
         ]
+      },
+      {
+        "tab": "Troubleshooting & Feedback",
+        "pages": [
+          "usage/troubleshooting/troubleshooting",
+          "usage/feedback"
+        ]
       }
     ],
     "global": {
