@@ -15,127 +15,25 @@
   },
   "favicon": "/logo-square.png",
   "navigation": {
-    "tabs": [
+    "pages": [
+      "index",
+      "usage/installation",
+      "usage/getting-started",
+      "usage/key-features",
       {
-        "tab": "Overview",
+        "group": "OpenHands Cloud",
         "pages": [
-          "modules/index",
-          "modules/usage/about"
-        ]
-      },
-      {
-        "tab": "Getting Started",
-        "pages": [
-          "modules/usage/installation",
-          "modules/usage/getting-started",
-          "modules/usage/key-features"
-        ]
-      },
-      {
-        "tab": "OpenHands Cloud",
-        "pages": [
-          "modules/usage/cloud/openhands-cloud",
+          "usage/cloud/openhands-cloud",
           {
             "group": "Installation",
             "pages": [
-              "modules/usage/cloud/github-installation",
-              "modules/usage/cloud/gitlab-installation"
+              "usage/cloud/github-installation",
+              "usage/cloud/gitlab-installation"
             ]
           },
-          "modules/usage/cloud/cloud-ui",
-          "modules/usage/cloud/cloud-issue-resolver",
-          "modules/usage/cloud/cloud-api"
-        ]
-      },
-      {
-        "tab": "Usage Methods",
-        "pages": [
-          "modules/usage/how-to/gui-mode",
-          "modules/usage/how-to/cli-mode",
-          "modules/usage/how-to/headless-mode",
-          "modules/usage/how-to/github-action"
-        ]
-      },
-      {
-        "tab": "Customization",
-        "pages": [
-          "modules/usage/customization/repository",
-          {
-            "group": "Microagents",
-            "pages": [
-              "modules/usage/prompting/microagents-overview",
-              "modules/usage/prompting/microagents-repo",
-              "modules/usage/prompting/microagents-keyword",
-              "modules/usage/prompting/microagents-org",
-              "modules/usage/prompting/microagents-public"
-            ]
-          },
-          {
-            "group": "Prompting",
-            "pages": [
-              "modules/usage/prompting/prompting-best-practices"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Advanced Configuration",
-        "pages": [
-          {
-            "group": "LLM Configuration",
-            "pages": [
-              "modules/usage/llms/llms",
-              {
-                "group": "Providers",
-                "pages": [
-                  "modules/usage/llms/azure-llms",
-                  "modules/usage/llms/google-llms",
-                  "modules/usage/llms/groq",
-                  "modules/usage/llms/local-llms",
-                  "modules/usage/llms/litellm-proxy",
-                  "modules/usage/llms/openai-llms",
-                  "modules/usage/llms/openrouter"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Runtime Configuration",
-            "pages": [
-              "modules/usage/runtimes-index",
-              "modules/usage/runtimes/docker",
-              "modules/usage/runtimes/remote",
-              "modules/usage/runtimes/modal",
-              "modules/usage/runtimes/daytona",
-              "modules/usage/runtimes/local"
-            ]
-          },
-          "modules/usage/configuration-options",
-          "modules/usage/how-to/custom-sandbox-guide",
-          "modules/usage/mcp"
-        ]
-      },
-      {
-        "tab": "Developer Resources",
-        "pages": [
-          "modules/usage/how-to/development-overview",
-          {
-            "group": "Architecture",
-            "pages": [
-              "modules/usage/architecture/backend",
-              "modules/usage/architecture/runtime"
-            ]
-          },
-          "modules/usage/how-to/debugging",
-          "modules/usage/how-to/evaluation-harness",
-          "modules/usage/how-to/websocket-connection"
-        ]
-      },
-      {
-        "tab": "Help & Support",
-        "pages": [
-          "modules/usage/troubleshooting/troubleshooting",
-          "modules/usage/feedback"
+          "usage/cloud/cloud-ui",
+          "usage/cloud/cloud-issue-resolver",
+          "usage/cloud/cloud-api"
         ]
       }
     ],
