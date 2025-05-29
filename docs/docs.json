@@ -138,6 +138,10 @@
           "usage/how-to/evaluation-harness",
           "usage/how-to/websocket-connection"
         ]
+      },
+      {
+          "tab": "API Reference",
+          "openapi": "/openapi.json"
       }
     ],
     "global": {
