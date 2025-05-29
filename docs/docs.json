@@ -38,6 +38,15 @@
               "usage/cloud/cloud-issue-resolver",
               "usage/cloud/cloud-api"
             ]
+          },
+          {
+            "group": "Usage Methods",
+            "pages": [
+              "usage/how-to/gui-mode",
+              "usage/how-to/cli-mode",
+              "usage/how-to/headless-mode",
+              "usage/how-to/github-action"
+            ]
           }
         ]
       },
@@ -56,6 +65,55 @@
               "usage/prompting/microagents-public"
             ]
           }
+        ]
+      },
+      {
+        "tab": "Advanced Configuration",
+        "pages": [
+          {
+            "group": "LLM Configuration",
+            "pages": [
+              "usage/llms/llms",
+              {
+                "group": "Providers",
+                "pages": [
+                  "usage/llms/azure-llms",
+                  "usage/llms/google-llms",
+                  "usage/llms/groq",
+                  "usage/llms/local-llms",
+                  "usage/llms/litellm-proxy",
+                  "usage/llms/openai-llms",
+                  "usage/llms/openrouter"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Runtime Configuration",
+            "pages": [
+              "usage/runtimes/overview",
+              {
+                "group": "Providers",
+                "pages": [
+                  "usage/runtimes/docker",
+                  "usage/runtimes/remote",
+                  "usage/runtimes/local",
+                  {
+                    "group": "Third-Party Providers",
+                    "pages": [
+                      "usage/runtimes/modal",
+                      "usage/runtimes/daytona",
+                      "usage/runtimes/runloop",
+                      "usage/runtimes/e2b"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "usage/configuration-options",
+          "usage/how-to/custom-sandbox-guide",
+          "usage/mcp"
         ]
       }
     ],
