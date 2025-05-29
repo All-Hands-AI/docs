@@ -17,63 +17,52 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Overview",
+        "tab": "Getting started",
         "pages": [
-          "modules/index",
-          "modules/usage/about"
-        ]
-      },
-      {
-        "tab": "Getting Started",
-        "pages": [
-          "modules/usage/installation",
-          "modules/usage/getting-started",
-          "modules/usage/key-features"
-        ]
-      },
-      {
-        "tab": "OpenHands Cloud",
-        "pages": [
-          "modules/usage/cloud/openhands-cloud",
+          "index",
+          "usage/installation",
+          "usage/getting-started",
+          "usage/key-features",
           {
-            "group": "Installation",
+            "group": "OpenHands Cloud",
             "pages": [
-              "modules/usage/cloud/github-installation",
-              "modules/usage/cloud/gitlab-installation"
+              "usage/cloud/openhands-cloud",
+              {
+                "group": "Installation",
+                "pages": [
+                  "usage/cloud/github-installation",
+                  "usage/cloud/gitlab-installation"
+                ]
+              },
+              "usage/cloud/cloud-ui",
+              "usage/cloud/cloud-issue-resolver",
+              "usage/cloud/cloud-api"
             ]
           },
-          "modules/usage/cloud/cloud-ui",
-          "modules/usage/cloud/cloud-issue-resolver",
-          "modules/usage/cloud/cloud-api"
+          {
+            "group": "Usage Methods",
+            "pages": [
+              "usage/how-to/gui-mode",
+              "usage/how-to/cli-mode",
+              "usage/how-to/headless-mode",
+              "usage/how-to/github-action"
+            ]
+          }
         ]
       },
       {
-        "tab": "Usage Methods",
+        "tab": "Prompting and Customization",
         "pages": [
-          "modules/usage/how-to/gui-mode",
-          "modules/usage/how-to/cli-mode",
-          "modules/usage/how-to/headless-mode",
-          "modules/usage/how-to/github-action"
-        ]
-      },
-      {
-        "tab": "Customization",
-        "pages": [
-          "modules/usage/customization/repository",
+          "usage/prompting/prompting-best-practices",
+          "usage/prompting/repository",
           {
             "group": "Microagents",
             "pages": [
-              "modules/usage/prompting/microagents-overview",
-              "modules/usage/prompting/microagents-repo",
-              "modules/usage/prompting/microagents-keyword",
-              "modules/usage/prompting/microagents-org",
-              "modules/usage/prompting/microagents-public"
-            ]
-          },
-          {
-            "group": "Prompting",
-            "pages": [
-              "modules/usage/prompting/prompting-best-practices"
+              "usage/prompting/microagents-overview",
+              "usage/prompting/microagents-repo",
+              "usage/prompting/microagents-keyword",
+              "usage/prompting/microagents-org",
+              "usage/prompting/microagents-public"
             ]
           }
         ]
@@ -84,17 +73,17 @@
           {
             "group": "LLM Configuration",
             "pages": [
-              "modules/usage/llms/llms",
+              "usage/llms/llms",
               {
                 "group": "Providers",
                 "pages": [
-                  "modules/usage/llms/azure-llms",
-                  "modules/usage/llms/google-llms",
-                  "modules/usage/llms/groq",
-                  "modules/usage/llms/local-llms",
-                  "modules/usage/llms/litellm-proxy",
-                  "modules/usage/llms/openai-llms",
-                  "modules/usage/llms/openrouter"
+                  "usage/llms/azure-llms",
+                  "usage/llms/google-llms",
+                  "usage/llms/groq",
+                  "usage/llms/local-llms",
+                  "usage/llms/litellm-proxy",
+                  "usage/llms/openai-llms",
+                  "usage/llms/openrouter"
                 ]
               }
             ]
@@ -102,41 +91,57 @@
           {
             "group": "Runtime Configuration",
             "pages": [
-              "modules/usage/runtimes-index",
-              "modules/usage/runtimes/docker",
-              "modules/usage/runtimes/remote",
-              "modules/usage/runtimes/modal",
-              "modules/usage/runtimes/daytona",
-              "modules/usage/runtimes/local"
+              "usage/runtimes/overview",
+              {
+                "group": "Providers",
+                "pages": [
+                  "usage/runtimes/docker",
+                  "usage/runtimes/remote",
+                  "usage/runtimes/local",
+                  {
+                    "group": "Third-Party Providers",
+                    "pages": [
+                      "usage/runtimes/modal",
+                      "usage/runtimes/daytona",
+                      "usage/runtimes/runloop",
+                      "usage/runtimes/e2b"
+                    ]
+                  }
+                ]
+              }
             ]
           },
-          "modules/usage/configuration-options",
-          "modules/usage/how-to/custom-sandbox-guide",
-          "modules/usage/mcp"
+          "usage/configuration-options",
+          "usage/how-to/custom-sandbox-guide",
+          "usage/mcp"
         ]
       },
       {
-        "tab": "Developer Resources",
+        "tab": "Troubleshooting & Feedback",
         "pages": [
-          "modules/usage/how-to/development-overview",
+          "usage/troubleshooting/troubleshooting",
+          "usage/feedback"
+        ]
+      },
+      {
+        "tab": "For OpenHands Developers",
+        "pages": [
+          "usage/how-to/development-overview",
           {
             "group": "Architecture",
             "pages": [
-              "modules/usage/architecture/backend",
-              "modules/usage/architecture/runtime"
+              "usage/architecture/backend",
+              "usage/architecture/runtime"
             ]
           },
-          "modules/usage/how-to/debugging",
-          "modules/usage/how-to/evaluation-harness",
-          "modules/usage/how-to/websocket-connection"
+          "usage/how-to/debugging",
+          "usage/how-to/evaluation-harness",
+          "usage/how-to/websocket-connection"
         ]
       },
       {
-        "tab": "Help & Support",
-        "pages": [
-          "modules/usage/troubleshooting/troubleshooting",
-          "modules/usage/feedback"
-        ]
+          "tab": "API Reference",
+          "openapi": "/openapi.json"
       }
     ],
     "global": {
