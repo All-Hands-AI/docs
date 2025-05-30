@@ -185,5 +185,13 @@
       "github": "https://github.com/All-Hands-AI/OpenHands",
       "discord": "https://discord.gg/ESHStjSjD4"
     }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude"
+    ]
   }
 }
