@@ -10,8 +10,11 @@
   "background": {
     "color": {
       "light": "#f7f3ee",
-      "dark": "#000000"
+      "dark": "#0B0D0E"
     }
+  },
+  "appearance": {
+    "default": "light"
   },
   "favicon": "/logo-square.png",
   "navigation": {
