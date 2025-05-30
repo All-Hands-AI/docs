@@ -155,6 +155,11 @@
           "anchor": "Blog",
           "href": "https://www.all-hands.dev/blog",
           "icon": "newspaper"
+        },
+        {
+          "anchor": "OpenHands Cloud",
+          "href": "https://app.all-hands.dev",
+          "icon": "cloud"
         }
       ]
     }
@@ -165,10 +170,6 @@
   },
   "navbar": {
     "links": [
-      {
-        "label": "OpenHands Cloud",
-        "href": "https://app.all-hands.dev/"
-      }
     ],
     "primary": {
       "type": "github",
