@@ -166,7 +166,7 @@
   "navbar": {
     "links": [
       {
-        "label": "Try it live",
+        "label": "OpenHands Cloud",
         "href": "https://app.all-hands.dev/"
       }
     ],
